@@ -1,1 +1,5 @@
 node_modules/
+
+# Vendored plugin skill, regenerated locally by stardust/scripts/setup.sh —
+# not tracked in git (third-party plugin code, not project-specific).
+.claude/
