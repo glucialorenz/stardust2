@@ -1,0 +1,120 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:uplift (degraded manual pass)",
+    "writtenAt": "2026-08-09T00:00:00Z",
+    "readArtifacts": [
+      "https://schweizmobil.ch/de/sommer",
+      "https://schweizmobil.ch/index_de.33220401_hashed.css",
+      "user-supplied screenshot: desktop full-page, 2026-08-09",
+      "user-supplied screenshot: mobile full-page, 2026-08-09"
+    ],
+    "synthesizedInputs": [],
+    "stardustVersion": "0.18.1",
+    "degraded": true,
+    "degradedReason": "Live Playwright render blocked in this environment (browser-process network egress reset at the platform/sandbox level; plain HTTP fetch to the same host succeeds). Palette/type/spacing tokens below are read directly from the site's real compiled CSS via HTTP fetch (curl), which DID succeed. Content/IA below is read from real user-supplied screenshots of the live page (desktop + mobile), analyzed visually. Nothing in this file is invented.",
+    "renderedBy": "manual-fetch+vision-degraded",
+    "NOTE_validateProvenance": "This file intentionally does NOT satisfy the strict renderedBy:\"playwright\" contract in extract/reference/current-state-schema.md § Live-render evidence. Any downstream automated phase (direct/prototype/migrate) that calls validateProvenance() on this project should and will refuse it. This capture is for the manual/presales pass only; re-run stardust:extract for real automated downstream processing once live rendering is available."
+  },
+  "site": {
+    "name": "SchweizMobil",
+    "tagline": "Entdecke die schönsten Wege der Schweiz",
+    "originUrl": "https://schweizmobil.ch",
+    "description": "Switzerland's official national platform for non-motorized-traffic route planning and navigation — hiking, cycling, mountain biking, skating, canoeing, and winter sports. Publicly backed (Bund, Kantone, Fürstentum Liechtenstein, Schweiz Tourismus listed as sponsors in the footer)."
+  },
+  "origins": [
+    {
+      "origin": "https://schweizmobil.ch",
+      "role": "primary",
+      "pagesCaptured": 1,
+      "contributedSignals": []
+    }
+  ],
+  "logo": {
+    "description": "Wordmark \"SchweizMobil\" (two-weight lockup: \"Schweiz\" regular + \"Mobil\" bold) with a small red-square Swiss-cross-derived flourish between the words. The same red-square cross-derived mark recurs at larger scale elsewhere on the page (see motifs.signatureGesture).",
+    "source": "screenshot, header, top-left"
+  },
+  "palette": [
+    { "role": "activity-hike", "value": "#609e26", "name": "Wanderland (hiking)", "usage": "activity-nav tile, route-type coding", "source": "css:--color-hike" },
+    { "role": "activity-cycle", "value": "#5c94cf", "name": "Veloland (cycling)", "usage": "activity-nav tile, route-type coding", "source": "css:--color-cycle" },
+    { "role": "activity-mountainbike", "value": "#deab18", "name": "Mountainbikeland", "usage": "activity-nav tile, route-type coding", "source": "css:--color-mountainbike" },
+    { "role": "activity-skate", "value": "#9d7fb7", "name": "Skatingland", "usage": "activity-nav tile, route-type coding", "source": "css:--color-skate" },
+    { "role": "activity-canoe", "value": "#409698", "name": "Kanuland (canoeing)", "usage": "activity-nav tile, route-type coding", "source": "css:--color-canoe" },
+    { "role": "activity-sledge", "value": "#9a6850", "name": "Sledging", "usage": "route-type coding (winter set)", "source": "css:--color-sledge" },
+    { "role": "activity-snowshoe", "value": "#bc5d8f", "name": "Snowshoeing", "usage": "route-type coding (winter set)", "source": "css:--color-snowshoe" },
+    { "role": "activity-winterhike", "value": "#eb6ea6", "name": "Winter hiking", "usage": "route-type coding (winter set)", "source": "css:--color-winterhike" },
+    { "role": "activity-crosscountry", "value": "#02a7de", "name": "Cross-country skiing", "usage": "route-type coding (winter set)", "source": "css:--color-crosscountry" },
+    { "role": "season-summer", "value": "#0152ea", "name": "Summer", "usage": "seasonal theme token (not visually dominant on captured page)", "source": "css:--color-summer" },
+    { "role": "season-winter", "value": "#00dafe", "name": "Winter", "usage": "activity-nav tile (\"Winter\"), seasonal theme token", "source": "css:--color-winter" },
+    { "role": "brand-red-primary", "value": "#d4021c", "name": "CHM red", "usage": "the actual dominant accent in practice: login/Plus button, \"Mehr erfahren\" CTA arrows, Swiss-cross mark fills — functions as the site's real primary color despite not being named \"primary\" in the token set", "source": "css:--color-chm-red" },
+    { "role": "brand-red-deep", "value": "#ad091d", "name": "CHM focus red", "usage": "focus/hover state of the red accent", "source": "css:--color-chm-focus-red" },
+    { "role": "neutral-gray-100", "value": "#f3f4f6", "source": "css:--color-gray-100" },
+    { "role": "neutral-gray-300", "value": "#d1d5dc", "source": "css:--color-gray-300" },
+    { "role": "neutral-gray-500", "value": "#6a7282", "source": "css:--color-gray-500" },
+    { "role": "neutral-gray-700", "value": "#364153", "source": "css:--color-gray-700" },
+    { "role": "neutral-gray-900", "value": "#101828", "source": "css:--color-gray-900" },
+    { "role": "surface-page-main", "value": "#f1f3f5", "usage": "the light-gray content well the feature-card rows sit on", "source": "css:--color-page-main" },
+    { "role": "surface-card", "value": "#f9f9f9", "source": "css:--color-card-gray" },
+    { "role": "semantic-danger", "value": "#c92a2a", "source": "css:--color-danger" },
+    { "role": "semantic-success", "value": "#8ce99a", "source": "css:--color-success" },
+    { "role": "semantic-warning", "value": "#fec078", "source": "css:--color-warning" }
+  ],
+  "type": {
+    "families": {
+      "sans": { "name": "Inter Variable", "role": "workhorse — headings and body both use it, no separate display family", "source": "css:font-family declarations" },
+      "display": null
+    },
+    "weights": { "normal": 400, "medium": 500, "semibold": 600, "bold": 700, "source": "css:--font-weight-*" },
+    "notes": "No signature/display typeface distinct from the workhorse sans — Inter Variable does all the work at all sizes observed in the screenshots (card headings ≈ 28–34px bold, body ≈ 16–18px regular). This disqualifies 'display-typography amplification' as a what-if candidate (see uplift-questions.md)."
+  },
+  "spacing": {
+    "radius": { "sm": "0.25rem", "md": "0.375rem", "lg": "0.5rem", "source": "css:--radius-*" },
+    "notes": "Component-specific spacing tokens exist (--spacing-details-*, --spacing-header-*) but a full cross-page frequency table isn't available without a live render; only home-page CSS was inspected."
+  },
+  "motifs": {
+    "signatureGesture": {
+      "description": "A red square containing a white Swiss-cross-derived star/flourish mark (visually related to the national cross but stylized, paired with the word \"plus\" in a casual script in one occurrence). Appears three times on the captured page: (1) small, in the header wordmark; (2) large, as the illustration for the \"SchweizMobil Plus\" card, overlaid on a topographic map; (3) again, smaller, as part of the \"Aktuelles\" card's flat-illustration icon.",
+      "underused": true,
+      "note": "Present in 3 places but never extended into structural chrome (dividers, footer treatment, background watermark) — it's treated as decorative/illustrative, not systemic. See uplift-questions.md Variant C."
+    },
+    "photography": {
+      "description": "Real, high-quality, specific Swiss landscape/outdoor photography — alpine streams, hikers on rocky trails, a lido with swan pedal-boats, cyclists at golden hour, a child eating outdoors. Not generic stock.",
+      "identity": "strong",
+      "note": "Consistently cropped into small, uniformly-sized rectangular cards (roughly 4:3) across every content row — never given more than card-scale share of canvas outside the hero. See uplift-improvements.md #2 and uplift-questions.md Variant B."
+    },
+    "illustrationStyle": {
+      "description": "One card (\"Aktuelles\") breaks from photography into a flat red/white line-art illustration (a folded newspaper/pamphlet with the Swiss-cross mark). No other illustrated moment on the page to pair it with.",
+      "note": "See uplift-improvements.md #5."
+    }
+  },
+  "componentStyle": {
+    "cardRadius": "small/subtle (matches --radius-sm/--radius-md, not pill-shaped)",
+    "buttonStyle": "solid-fill red pill/rounded-rect for the primary header CTA (\"Anmelden\"); text links with a small red arrow glyph (\"→|\") for all in-content CTAs — no secondary/outline button style observed"
+  },
+  "systemComponents": [
+    { "kind": "activity-nav-tiles", "count": 6, "description": "Wanderland / Veloland / Mountainbikeland / Skatingland / Kanuland / Winter — color-coded per palette.activity-*, icon + label, overlaid on the hero's bottom edge on desktop, reflows to a 2-column grid on mobile." },
+    { "kind": "feature-card-row", "count": 5, "description": "Image + heading + body copy + \"Mehr erfahren\" link. Every single row uses the identical image-left/text-right composition on desktop (stacks image-top/text-bottom on mobile) — no compositional variation across the 5 occurrences: Routen mit Badespass, Die schönsten Wanderungen am Wasser, SchweizMobil Plus, App SchweizMobil, Aktuelles." },
+    { "kind": "promo-tile-grid", "count": 4, "description": "2×2 grid (1-column stack on mobile) of image tiles with a colored label bar overlay, no body copy: Familienwanderungen, Gravelbike-Touren, Genial legal, Hindernisfreie Wege." },
+    { "kind": "sponsor-logo-strip", "count": 2, "description": "\"Öffentliche Träger von SchweizMobil\" (Bund, Kantone, Fürstentum Liechtenstein, Schweiz Tourismus) and \"Fachpartner\" — institutional/governmental footer content, consistent with a publicly-funded civic platform." },
+    { "kind": "floating-action-button", "count": 1, "description": "A small red circular button fixed to the page's right edge, present across scroll positions — likely a persistent help/feedback/contact widget." }
+  ],
+  "iconFont": null,
+  "voice": {
+    "heroHeadline": "Entdecke die schönsten Wege der Schweiz",
+    "heroSubcopy": null,
+    "register": "civic-informational, second-person (\"du\"), warm but plain — not salesy, not playful. Consistent across every captured sample; no tonal contrast between sections.",
+    "ctaSamples": ["Mehr erfahren", "Anmelden"],
+    "navItems": ["Wanderland", "Veloland", "Mountainbikeland", "Skatingland", "Kanuland", "Winter"],
+    "footerHeadings": ["Sprache", "Seite teilen", "Folge uns auf", "Öffentliche Träger von SchweizMobil", "Fachpartner"]
+  },
+  "voiceTable": {
+    "samples": [
+      { "section": "Routen mit Badespass", "text": "Fluss- und Seebäder bieten eine willkommene Abkühlung entlang von SchweizMobil-Routen. Entdecke unsere Auswahl." },
+      { "section": "Die schönsten Wanderungen am Wasser", "text": "Ob Bergseen, tosende Wasserfälle, plätschernde Bäche oder lauschige Badeplätze – diese Wanderwege verlaufen in unmittelbarer Nähe von Gewässern. Ideal für eine Abkühlung an heissen Tagen." },
+      { "section": "SchweizMobil Plus", "text": "SchweizMobil Plus ist der perfekte Begleiter für alle, die gerne in der Natur unterwegs sind. Zusätzlich zu den bewährten Funktionen von SchweizMobil bietet dir SchweizMobil Plus eine Vielzahl nützlicher Tools für deine Tourenplanung." },
+      { "section": "App SchweizMobil", "text": "Die kostenlose App SchweizMobil ist der perfekte Begleiter für alle, die gerne draussen unterwegs sind – egal ob im Sommer oder im Winter." },
+      { "section": "Aktuelles", "text": "Du möchtest mehr zu SchweizMobil erfahren? Hier findest du aktuelle Beiträge zum Thema Langsamverkehr, Neuigkeiten rund um SchweizMobil sowie Informationen für Medienschaffende." }
+    ]
+  },
+  "crossPromo": { "detected": false, "notes": "Single-origin capture; no cross-promo evidence available without a multi-page crawl." },
+  "register": "brand"
+}

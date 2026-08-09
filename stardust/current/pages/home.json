@@ -1,0 +1,168 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:uplift (degraded manual pass)",
+    "writtenAt": "2026-08-09T00:00:00Z",
+    "readArtifacts": ["https://schweizmobil.ch/de/sommer"],
+    "synthesizedInputs": [],
+    "stardustVersion": "0.18.1",
+    "renderedBy": "manual-fetch+vision-degraded",
+    "fetchedAt": "2026-08-09T00:00:00Z",
+    "waitMode": "n/a — no live render performed",
+    "waitMs": 0,
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "heroSource": "vision (user screenshot)",
+    "NOTE_validateProvenance": "Does NOT satisfy renderedBy:\"playwright\" — will (and should) be refused by validateProvenance() in any automated downstream phase. See _brand-extraction.json for full degraded-provenance rationale."
+  },
+  "slug": "home",
+  "url": "https://schweizmobil.ch/de/sommer",
+  "finalUrl": "https://schweizmobil.ch/de/sommer",
+  "title": "SchweizMobil",
+  "metaDescription": null,
+  "heroHeadline": "Entdecke die schönsten Wege der Schweiz",
+  "heroLede": null,
+  "og": {},
+  "themeColor": null,
+  "language": "de",
+  "headings": [
+    { "level": 1, "text": "Entdecke die schönsten Wege der Schweiz", "id": null, "domPath": "unknown (vision capture)" },
+    { "level": 2, "text": "Routen mit Badespass", "id": null, "domPath": "unknown (vision capture)" },
+    { "level": 2, "text": "Die schönsten Wanderungen am Wasser", "id": null, "domPath": "unknown (vision capture)" },
+    { "level": 2, "text": "SchweizMobil Plus", "id": null, "domPath": "unknown (vision capture)" },
+    { "level": 2, "text": "App SchweizMobil", "id": null, "domPath": "unknown (vision capture)" },
+    { "level": 2, "text": "Aktuelles", "id": null, "domPath": "unknown (vision capture)" }
+  ],
+  "landmarks": [
+    {
+      "tag": "header", "role": "banner", "id": null, "classes": [],
+      "innerText": "SchweizMobil · Plus Anmelden · [search] · [filter]",
+      "children": []
+    },
+    {
+      "tag": "main", "role": "main", "id": null, "classes": [],
+      "innerText": "",
+      "children": [
+        {
+          "tag": "section", "role": null, "id": "hero", "classes": [], "purpose": "hero",
+          "headlineRef": null, "innerTextSummary": "Photo carousel (5 slides), 6 activity-nav tiles overlaid at bottom edge.",
+          "wordCount": 0, "body": [], "lists": [], "qa": [], "quotes": []
+        },
+        {
+          "tag": "section", "role": null, "id": "activity-nav", "classes": [], "purpose": "feature-list",
+          "headlineRef": null, "innerTextSummary": "Wanderland, Veloland, Mountainbikeland, Skatingland, Kanuland, Winter",
+          "wordCount": 6, "body": [],
+          "lists": [{ "ordered": false, "items": ["Wanderland", "Veloland", "Mountainbikeland", "Skatingland", "Kanuland", "Winter"] }],
+          "qa": [], "quotes": []
+        },
+        {
+          "tag": "section", "role": null, "id": "routen-mit-badespass", "classes": [], "purpose": "feature-list",
+          "headlineRef": 1, "innerTextSummary": "Fluss- und Seebäder bieten eine willkommene Abkühlung entlang von SchweizMobil-Routen...",
+          "wordCount": 20,
+          "body": ["Fluss- und Seebäder bieten eine willkommene Abkühlung entlang von SchweizMobil-Routen. Entdecke unsere Auswahl."],
+          "lists": [], "qa": [], "quotes": []
+        },
+        {
+          "tag": "section", "role": null, "id": "wanderungen-am-wasser", "classes": [], "purpose": "feature-list",
+          "headlineRef": 2, "innerTextSummary": "Ob Bergseen, tosende Wasserfälle, plätschernde Bäche oder lauschige Badeplätze...",
+          "wordCount": 30,
+          "body": ["Ob Bergseen, tosende Wasserfälle, plätschernde Bäche oder lauschige Badeplätze – diese Wanderwege verlaufen in unmittelbarer Nähe von Gewässern. Ideal für eine Abkühlung an heissen Tagen."],
+          "lists": [], "qa": [], "quotes": []
+        },
+        {
+          "tag": "section", "role": null, "id": "promo-tiles", "classes": [], "purpose": "feature-list",
+          "headlineRef": null, "innerTextSummary": "Familienwanderungen, Gravelbike-Touren, Genial legal, Hindernisfreie Wege",
+          "wordCount": 6, "body": [],
+          "lists": [{ "ordered": false, "items": ["Familienwanderungen", "Gravelbike-Touren", "Genial legal", "Hindernisfreie Wege"] }],
+          "qa": [], "quotes": []
+        },
+        {
+          "tag": "section", "role": null, "id": "schweizmobil-plus", "classes": [], "purpose": "feature-list",
+          "headlineRef": 3, "innerTextSummary": "SchweizMobil Plus ist der perfekte Begleiter für alle, die gerne in der Natur unterwegs sind...",
+          "wordCount": 35,
+          "body": ["SchweizMobil Plus ist der perfekte Begleiter für alle, die gerne in der Natur unterwegs sind. Zusätzlich zu den bewährten Funktionen von SchweizMobil bietet dir SchweizMobil Plus eine Vielzahl nützlicher Tools für deine Tourenplanung."],
+          "lists": [], "qa": [], "quotes": []
+        },
+        {
+          "tag": "section", "role": null, "id": "app-schweizmobil", "classes": [], "purpose": "feature-list",
+          "headlineRef": 4, "innerTextSummary": "Die kostenlose App SchweizMobil ist der perfekte Begleiter...",
+          "wordCount": 24,
+          "body": ["Die kostenlose App SchweizMobil ist der perfekte Begleiter für alle, die gerne draussen unterwegs sind – egal ob im Sommer oder im Winter."],
+          "lists": [], "qa": [], "quotes": []
+        },
+        {
+          "tag": "section", "role": null, "id": "aktuelles", "classes": [], "purpose": "feature-list",
+          "headlineRef": 5, "innerTextSummary": "Du möchtest mehr zu SchweizMobil erfahren?...",
+          "wordCount": 26,
+          "body": ["Du möchtest mehr zu SchweizMobil erfahren? Hier findest du aktuelle Beiträge zum Thema Langsamverkehr, Neuigkeiten rund um SchweizMobil sowie Informationen für Medienschaffende."],
+          "lists": [], "qa": [], "quotes": []
+        }
+      ]
+    },
+    {
+      "tag": "footer", "role": "contentinfo", "id": null, "classes": [],
+      "innerText": "Sprache DE FR IT EN · Seite teilen · Folge uns auf · Impressum · Copyright und Datenschutz · Gewährleistungs- und Haftungsausschluss · Über uns · SchweizMobil für Partner · Kontakt · Legende · Öffentliche Träger von SchweizMobil (Bund, Kantone, Fürstentum Liechtenstein, Schweiz Tourismus) · Fachpartner",
+      "children": []
+    }
+  ],
+  "ctas": [
+    { "label": "Anmelden", "href": null, "tag": "a", "domPath": "unknown", "style": { "backgroundColor": "#d4021c", "color": "#fff" }, "appearsAbove": "fold" },
+    { "label": "Mehr erfahren", "href": null, "tag": "a", "domPath": "unknown", "style": { "color": "#d4021c" }, "appearsAbove": "below-fold" }
+  ],
+  "links": { "internal": [], "external": [] },
+  "media": {
+    "images": [
+      { "src": null, "alt": "hero: river/stream with wildflowers, trees", "naturalWidth": null, "naturalHeight": null, "resolves": null, "localPath": null, "note": "carousel, 5 slides; only slide 1 captured" },
+      { "src": null, "alt": "Routen mit Badespass: swan pedal-boats on a lake/lido", "naturalWidth": null, "naturalHeight": null, "resolves": null, "localPath": null },
+      { "src": null, "alt": "Wanderungen am Wasser: alpine valley, stream, hikers on rocks", "naturalWidth": null, "naturalHeight": null, "resolves": null, "localPath": null },
+      { "src": null, "alt": "Familienwanderungen: child eating outdoors on a tree-lined path", "naturalWidth": null, "naturalHeight": null, "resolves": null, "localPath": null },
+      { "src": null, "alt": "Gravelbike-Touren: cyclist on path at golden hour", "naturalWidth": null, "naturalHeight": null, "resolves": null, "localPath": null },
+      { "src": null, "alt": "Genial legal: stone building/trail scene", "naturalWidth": null, "naturalHeight": null, "resolves": null, "localPath": null },
+      { "src": null, "alt": "Hindernisfreie Wege: path through green meadow", "naturalWidth": null, "naturalHeight": null, "resolves": null, "localPath": null },
+      { "src": null, "alt": "SchweizMobil Plus: topographic map with red route line, overlaid red Swiss-cross \"Plus\" mark", "naturalWidth": null, "naturalHeight": null, "resolves": null, "localPath": null },
+      { "src": null, "alt": "App SchweizMobil: phone mockup showing a colored route map", "naturalWidth": null, "naturalHeight": null, "resolves": null, "localPath": null },
+      { "src": null, "alt": "Aktuelles: flat red/white line illustration of a folded newspaper with Swiss cross", "naturalWidth": null, "naturalHeight": null, "resolves": null, "localPath": null }
+    ],
+    "inlineSvgs": [],
+    "cssBackgrounds": [],
+    "videos": [],
+    "iframes": []
+  },
+  "forms": [],
+  "widgets": { "modals": [], "accordions": [], "tabs": [] },
+  "components": {
+    "cards": { "count": 5, "examples": ["feature-card-row × 5"] },
+    "grids": { "count": 2, "examples": ["activity-nav-tiles (6-up)", "promo-tile-grid (2×2)"] },
+    "accordions": { "count": 0, "examples": [] },
+    "tabs": { "count": 0, "examples": [] },
+    "tables": { "count": 0, "examples": [] },
+    "modals": { "count": 0, "examples": [] },
+    "carousels": { "count": 1, "examples": ["hero photo carousel, 5 slides"] },
+    "videos": { "count": 0, "examples": [] },
+    "iframes": { "count": 0, "examples": [] },
+    "dataVizEmbeds": { "count": 0, "examples": [] },
+    "teamTiles": { "count": 0, "examples": [] },
+    "pricingTiles": { "count": 0, "examples": [] },
+    "testimonialCards": { "count": 0, "examples": [] },
+    "logoStrip": { "count": 2, "examples": ["Öffentliche Träger von SchweizMobil", "Fachpartner"] },
+    "timeline": { "count": 0, "examples": [] },
+    "breadcrumbs": { "count": 0, "examples": [] },
+    "statRow": { "count": 0, "examples": [] },
+    "ctaBand": { "count": 0, "examples": [] },
+    "formFields": { "count": 0, "examples": [] },
+    "other": [{ "kind": "floating-action-button", "count": 1 }]
+  },
+  "perSectionStyle": [],
+  "embedDominance": { "dominated": false, "iframeSrc": null, "viewportCoveragePct": null, "mainHeightCoveragePct": null, "screenshot": null },
+  "cssCustomProperties": [
+    { "name": "--color-hike", "value": "#609e26" },
+    { "name": "--color-cycle", "value": "#5c94cf" },
+    { "name": "--color-mountainbike", "value": "#deab18" },
+    { "name": "--color-skate", "value": "#9d7fb7" },
+    { "name": "--color-canoe", "value": "#409698" },
+    { "name": "--color-winter", "value": "#00dafe" },
+    { "name": "--color-chm-red", "value": "#d4021c" },
+    { "name": "--font-sans", "value": "Inter Variable" }
+  ],
+  "screenshot": null,
+  "stats": { "wordCount": 141, "ctaCount": 6, "internalLinkCount": null, "externalLinkCount": null, "imageCount": 10 }
+}
