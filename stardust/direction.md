@@ -24,16 +24,25 @@ give the activity-nav tiles their own space off the hero, weight the red
 accent onto 1–2 large surfaces, resolve the Aktuelles illustration mismatch,
 give the activity tiles a considered mobile treatment.
 
-## Variant B — What if we amplified the captured photography?
+## Variant B — What if summer meant water?
 
-Role: design-team motivator. The brand's underused capability foregrounded.
-What if: "What if the captured photography breathed at editorial scale?"
-Captured trait amplified: real, high-identity Swiss landscape photography,
-currently cropped to uniform small cards.
-Evidence: `_brand-extraction.json#motifs.photography`.
-Composition: 2–3 key photographs promoted to full-bleed/editorial scale with
-title overlays; remaining cards keep a smaller but photo-first (not
-text-first) balance.
+Role: design-team motivator. A narrower, more opinionated editorial angle,
+derived (not from the 8-candidate catalog — see uplift-questions.md § Variant
+B for the derivation) rather than a straight layout amplification.
+What if: "What if summer's whole editorial angle was water — heat relief,
+lakes, rivers — instead of a generic activity showcase?"
+Captured trait amplified: of the 5 real captured photos + hero, 3 are already
+water-adjacent (river hero, lake pedal-boats, mountain-stream hike) —an
+underused thematic throughline, not just an underused visual trait.
+Evidence: `_brand-extraction.json#motifs.photography`; real photo set at
+`stardust/current/assets/media/` (hero.jpg, badespass.jpg,
+wanderungen-wasser.jpg all water scenes).
+Composition: reorder and reframe around the water throughline — hero copy
+and the two water-adjacent feature rows lead, non-water content (App,
+SchweizMobil Plus, Aktuelles) demoted/compressed below a clear "hitze? hier
+abkühlen" (heat? cool off here) editorial thesis. Photography still gets
+more room than the captured baseline (a water-themed page has to actually
+show the water), but the bet is the THEME, not the crop size.
 Motion: static (no cinematic layer).
 
 ## Variant C — What if motion was part of the identity?
@@ -56,12 +65,12 @@ instead of a one-off illustration.
 
 ## Differentiation check
 
-- A vs B: layout/photo-scale changes across 3+ sections — passes the ≥2-change
-  bar.
+- A vs B: reordered IA around a water thesis + a demoted non-water section —
+  passes the ≥2-change bar.
 - A vs C: motion layer + mark systemization — different axis from A entirely.
-- B vs C: B bets on photography scale (static composition); C bets on motion +
-  a graphic mark system. Different traits, different axes — passes the
-  differentiation contract.
+- B vs C: B bets on editorial theme/IA reordering (static composition); C bets
+  on motion + a graphic mark system. Different traits, different axes —
+  passes the differentiation contract.
 
 ## What did NOT run (degraded-pass disclosure)
 
