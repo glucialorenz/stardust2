@@ -29,13 +29,18 @@ Variant role: B's composition bet (IA reordering + editorial thesis, not motion)
 Composition bet: hero copy and the two water rows lead; App SchweizMobil / SchweizMobil Plus / Aktuelles demoted and compressed below an explicit "cool off" editorial thesis statement.
 Chosen over: Photography re-foregrounding (catalog, see below) — user preference, 2026-08-09.
 
-### Variant C · Signature-gesture extension
-Source: catalog
-What if: "What if the Swiss-cross-in-square mark became a structural system, not a hero decoration?"
-Cinematic register: `arrival` — selected from PRODUCT.md Brand Personality (`civic-formal` + `place-led`, per the motion-registers.md selection heuristic — an unambiguous match, no tie-break needed).
-Evidence: `_brand-extraction.json#motifs.signatureGesture` — the mark appears 3× (header, SchweizMobil Plus card, Aktuelles card) but is never extended into structural chrome (dividers, footer, background). This is exactly the catalog's "Natural register for C" pairing for signature-gesture extension: `arrival` (composition-led).
-Motion bet: the mark becomes a scroll-triggered arrival gesture — unmasking in the hero, then recurring as a section-divider motif and footer wordmark treatment, each entrance choreographed per `arrival`'s signature moves (hero parallax, per-section fade+translateY entrances).
-Status: pending — user is reviewing alternatives (2026-08-09), see chat for the options under discussion.
+### Variant C · Pre-hero intake + personalized arrival
+Source: derived, and a deliberate departure from the base uplift contract (C's IA is normally identical to A's — see direction.md § Variant C for why this run overrides that on explicit user direction, 2026-08-09).
+What if: "What if arrival itself was the personalization — the page asks who you are before it decides what to show you?"
+Cinematic register: `arrival` — selected from PRODUCT.md Brand Personality (`civic-formal` + `place-led`, per the motion-registers.md selection heuristic — an unambiguous match, no tie-break needed). Unchanged by the direction revision below; only the composition changed.
+Four intake questions, evidence disclosed per-question rather than averaged:
+1. **Activity** (6 real tiles + "Inspire me") — strong evidence: `_brand-extraction.json#systemComponents[activity-nav-tiles]`.
+2. **Location** (map click) — moderate evidence: not on this captured page, but grounded in SchweizMobil's real product purpose (route planning, `PRODUCT.md`).
+3. **Accessibility need** (yes/no, framed as "barrier-free / step-free routes?") — strong evidence: routes to the real captured "Hindernisfreie Wege" content.
+4. **Date** (date picker, "so we can point you to good weather") — weakest evidence: no captured citation on the page or in PRODUCT.md. This is the client's own creative direction for the visionary variant, recorded honestly as not evidence-derived rather than dressed up as a captured trait.
+Disqualification test: this candidate would be inadmissible if the page had no real per-activity IA to key the personalization off of — it doesn't apply here (the activity tiles are the strongest-evidenced piece), but the weak date/weather leg is disclosed rather than retrofitted with invented evidence.
+Variant role: C's cinematic bet — motion carries the intake's own reveals and the personalized hero's entrance; composition (the intake screen existing at all) is the deliberate contract override.
+Fallback: no answer / scroll past → settles into A's generic, all-activities content. Nobody gets stuck on the intake.
 
 ## Disqualified
 

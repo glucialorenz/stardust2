@@ -45,32 +45,68 @@ more room than the captured baseline (a water-themed page has to actually
 show the water), but the bet is the THEME, not the crop size.
 Motion: static (no cinematic layer).
 
-## Variant C — What if motion was part of the identity?
+## Variant C — What if the page met you before it showed you anything?
 
-Role: visionary pitch. The brand's third dimension — kinetic.
-What if: "What if the Swiss-cross-in-square mark became a structural system,
-not a hero decoration?"
+Role: visionary pitch. The brand's third dimension — kinetic AND personalized.
+What if: "What if arrival itself was the personalization — the page asks who
+you are before it decides what to show you?"
 Cinematic register: `arrival` (auto-picked from PRODUCT.md Brand Personality:
-`civic-formal` + `place-led`).
-Captured trait amplified: the signature red-square cross/flourish mark,
-currently confined to 3 illustrative appearances.
-Evidence: `_brand-extraction.json#motifs.signatureGesture`.
-Composition: identical IA to A; the bet is motion + the mark's systemic reuse,
-not layout.
-Motion: cinematic, register `arrival` — hero photograph parallax on scroll,
-post-hero content rising over the hero ("rising plate"), per-section
-fade+translateY(40px) entrances staggered across the feature-card rows, and
-the signature mark recurring as a scroll-triggered divider/footer treatment
-instead of a one-off illustration.
+`civic-formal` + `place-led` — still the right register; the personalization
+step is a NEW first act ahead of the hero, not a register change).
+
+**Deliberate departure from the base contract.** stardust:uplift's default
+rule is "C's composition is identical to A; the bet is motion, not layout."
+This variant, per explicit user direction (2026-08-09), breaks that rule on
+purpose: C now leads with a short 4-question intake screen before the hero,
+so its IA is NOT identical to A. Recorded here rather than silently applied,
+since it's a conscious override of the skill's normal variant contract, not
+an oversight.
+
+**The intake screen** (before any hero image renders):
+1. **Activity** — click one of the six real activity-tile icons, or
+   "Inspire me" (no strong preference / surprise me).
+2. **Location** — pick a region on a simple clickable Switzerland map.
+3. **Accessibility need** — "Do you need barrier-free / step-free routes?"
+   yes/no. (Softer framing than a literal disability question — same
+   functional routing, to the real captured "Hindernisfreie Wege" content.)
+4. **When** — a date picker, framed as "so we can point you to good weather."
+
+**Evidence for each question** (mixed strength — disclosed per-question,
+not averaged):
+- Activity: strong — the six real activity-nav tiles are already captured
+  IA (`_brand-extraction.json#systemComponents[activity-nav-tiles]`).
+- Accessibility: strong — "Hindernisfreie Wege" is real captured content
+  already on the page (one of the 4 promo tiles), not invented.
+- Location: moderate — not literally on this captured page, but
+  SchweizMobil's whole product is route planning (`PRODUCT.md`), so
+  location-based filtering is a legitimate extension of real product
+  purpose, not a fabricated feature.
+- Date/weather: weakest — no captured evidence for this on the page or in
+  the product description. This is the client's own creative direction for
+  the visionary variant, not something derived from the capture. Flagged
+  honestly rather than dressed up as evidence-backed.
+
+**After the intake** (or on skip/timeout — falls back to A's generic,
+all-activities content so nobody gets stuck on the intake screen): the hero
+and content reflow around the answers — activity sets the accent color and
+lead photo, location and date drive an illustrative (not live-data-backed;
+no real weather feed exists in this pass) suggestion, accessibility need
+promotes "Hindernisfreie Wege"-style content when set. Composition beyond
+the intake: same as A. Motion: cinematic, register `arrival` — the intake's
+own reveals, the personalized hero's entrance, post-hero content rising over
+the hero, per-section fade+translateY(40px) entrances, and the signature
+mark recurring as a divider/footer treatment.
 
 ## Differentiation check
 
 - A vs B: reordered IA around a water thesis + a demoted non-water section —
   passes the ≥2-change bar.
-- A vs C: motion layer + mark systemization — different axis from A entirely.
-- B vs C: B bets on editorial theme/IA reordering (static composition); C bets
-  on motion + a graphic mark system. Different traits, different axes —
-  passes the differentiation contract.
+- A vs C: an entirely new pre-hero intake screen + personalized, motion-driven
+  entrance — different axis from A by a wide margin.
+- B vs C: B bets on editorial theme/IA reordering, static, same-for-everyone.
+  C bets on personalization + motion, different-per-visitor. Different
+  traits, different axes, and now also a different *mechanism* (static vs.
+  interactive) — passes the differentiation contract with room to spare.
 
 ## What did NOT run (degraded-pass disclosure)
 
