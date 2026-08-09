@@ -79,7 +79,8 @@
     "photography": {
       "description": "Real, high-quality, specific Swiss landscape/outdoor photography — alpine streams, hikers on rocky trails, a lido with swan pedal-boats, cyclists at golden hour, a child eating outdoors. Not generic stock.",
       "identity": "strong",
-      "note": "Consistently cropped into small, uniformly-sized rectangular cards (roughly 4:3) across every content row — never given more than card-scale share of canvas outside the hero. See uplift-improvements.md #2 and uplift-questions.md Variant B."
+      "note": "Consistently cropped into small, uniformly-sized rectangular cards (roughly 4:3) across every content row — never given more than card-scale share of canvas outside the hero. See uplift-improvements.md #2 and uplift-questions.md Variant B.",
+      "assetsAvailable": "User supplied the real source photography (10 files, per-slot mapping) on 2026-08-09, after this file was first written. Resized/compressed copies now live at stardust/current/assets/media/ and are referenced by pages/home.json#media.images. These are user-supplied files, not a live-render capture — still not `renderedBy:\"playwright\"` — but the images themselves are the genuine site assets, not placeholders."
     },
     "illustrationStyle": {
       "description": "One card (\"Aktuelles\") breaks from photography into a flat red/white line-art illustration (a folded newspaper/pamphlet with the Swiss-cross mark). No other illustrated moment on the page to pair it with.",
