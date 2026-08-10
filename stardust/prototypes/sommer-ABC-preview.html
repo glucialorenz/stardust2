@@ -242,9 +242,10 @@
   [data-variant="c"] .sm-login{background:rgba(255,255,255,.16); backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,.4);}
   [data-variant="c"] .sm-icon{border-color:rgba(255,255,255,.5);}
   [data-variant="c"] .sm-intake{padding-top:88px;}
-  [data-variant="c"] .sm-hero{position:relative; height:460px;}
-  [data-variant="c"] .sm-hero__img{position:absolute; top:-10%; bottom:-10%; left:auto; right:auto; width:100vw; margin-left:calc(50% - 50vw); margin-right:calc(50% - 50vw); will-change:transform; transition:background-image .4s ease; background-size:cover; background-position:center;}
-  [data-variant="c"] .sm-hero__scrim{position:absolute; top:0; bottom:0; left:auto; right:auto; width:100vw; margin-left:calc(50% - 50vw); margin-right:calc(50% - 50vw); background:linear-gradient(0deg,rgba(20,30,15,.42) 0%,rgba(20,30,15,0) 55%);}
+  [data-variant="c"] .sm-hero{position:relative; height:860px;}
+  [data-variant="c"] .sm-hero__bleed{position:absolute; top:0; bottom:0; left:auto; right:auto; width:100vw; margin-left:calc(50% - 50vw); margin-right:calc(50% - 50vw); overflow:hidden;}
+  [data-variant="c"] .sm-hero__img{position:absolute; top:-10%; bottom:-10%; left:0; right:0; width:100%; will-change:transform; transition:background-image .4s ease; background-size:cover; background-position:center;}
+  [data-variant="c"] .sm-hero__scrim{position:absolute; inset:0; background:linear-gradient(0deg,rgba(20,30,15,.42) 0%,rgba(20,30,15,0) 55%);}
   [data-variant="c"] .sm-hero__copy{position:absolute; left:28px; bottom:24px; color:#fff; max-width:560px;}
   [data-variant="c"] .sm-hero__copy h1{font-size:32px; line-height:1.12; text-shadow:0 2px 16px rgba(0,0,0,.3);}
   [data-variant="c"] .sm-a11y-callout{margin:0; display:flex; gap:20px; align-items:center; padding:28px 40px; background:#fff7f5; border-bottom:1px solid var(--line);}
@@ -253,11 +254,13 @@
   [data-variant="c"] .sm-a11y-callout p{max-width:52ch;}
   [data-variant="c"] .sm-plate{position:relative; margin-top:-28px; background:var(--white); border-radius:14px 14px 0 0; z-index:2; box-shadow:0 -12px 24px rgba(0,0,0,.08);}
   [data-variant="c"] .sm-tiles{border-radius:14px 14px 0 0; overflow:hidden;}
+  [data-variant="c"] .sm-tile{padding:56px 10px 52px;}
+  [data-variant="c"] .sm-tile__icon{width:42px; height:42px;}
   [data-variant="c"] .sm-rows{display:flex; flex-direction:column; position:relative; gap:2px;}
   [data-variant="c"] .sm-rows--merged{gap:0;}
-  [data-variant="c"] .sm-row{position:relative; min-height:360px; display:block;}
-  [data-variant="c"] .sm-row__img{position:absolute; top:0; bottom:0; left:auto; right:auto; width:100vw; margin-left:calc(50% - 50vw); margin-right:calc(50% - 50vw); background-size:cover; background-position:center;}
-  [data-variant="c"] .sm-row__img.js-parallax{top:-8%; bottom:-8%; will-change:transform;}
+  [data-variant="c"] .sm-row{position:relative; min-height:720px; display:block;}
+  [data-variant="c"] .sm-row__bleed{position:absolute; top:0; bottom:0; left:auto; right:auto; width:100vw; margin-left:calc(50% - 50vw); margin-right:calc(50% - 50vw); overflow:hidden;}
+  [data-variant="c"] .sm-row__img{position:absolute; top:-8%; bottom:-8%; left:0; right:0; width:100%; background-size:cover; background-position:center; will-change:transform;}
   [data-variant="c"] .sm-row__img::after{content:""; position:absolute; inset:0; background:linear-gradient(100deg, rgba(30,26,14,.4) 0%, rgba(30,26,14,.06) 55%, rgba(30,26,14,0) 75%);}
   [data-variant="c"] .sm-row:nth-of-type(even) .sm-row__img::after{background:linear-gradient(260deg, rgba(30,26,14,.4) 0%, rgba(30,26,14,.06) 55%, rgba(30,26,14,0) 75%);}
   [data-variant="c"] .sm-row__text{position:relative; z-index:1; margin:32px; max-width:400px; display:flex; flex-direction:column; gap:12px; background:rgba(255,255,255,.14); backdrop-filter:blur(24px) saturate(1.4); -webkit-backdrop-filter:blur(24px) saturate(1.4); border:1px solid rgba(255,255,255,.4); border-radius:22px; padding:28px 30px; box-shadow:0 16px 40px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.4); color:#fff;}
@@ -265,36 +268,40 @@
   [data-variant="c"] .sm-row__text h2{font-size:22px; color:#fff;}
   [data-variant="c"] .sm-row__text p{max-width:40ch; color:rgba(255,255,255,.85);}
   [data-variant="c"] .sm-row__text .sm-cta{color:#fff;}
-  [data-variant="c"] .sm-footer{background:linear-gradient(160deg,#234a3a 0%,#183226 100%);}
-  [data-variant="c"] .sm-footer__col h4{color:rgba(255,255,255,.5);}
-  [data-variant="c"] .sm-footer__col a{color:#fff;}
-  [data-variant="c"] .sm-footer__cols{border-bottom-color:rgba(255,255,255,.15);}
+  [data-variant="c"] .sm-footer{background:linear-gradient(160deg,#eaf1ec 0%,#e1ece5 100%); width:100vw; margin-left:calc(50% - 50vw); margin-right:calc(50% - 50vw); padding:0;}
+  [data-variant="c"] .sm-footer__inner{max-width:1180px; margin:0 auto; padding:44px 40px;}
+  [data-variant="c"] .sm-footer__col h4{color:var(--ink-3);}
+  [data-variant="c"] .sm-footer__col a{color:var(--red);}
+  [data-variant="c"] .sm-footer__cols{border-bottom-color:rgba(16,24,20,.14);}
   [data-variant="c"] .sm-sponsors2{padding-top:26px;}
-  [data-variant="c"] .sm-sponsors2__heading{font-size:11px; text-transform:uppercase; letter-spacing:.05em; color:rgba(255,255,255,.5); margin:0 0 18px;}
-  [data-variant="c"] .sm-sponsors2__row{display:flex; align-items:center; flex-wrap:wrap; gap:24px;}
+  [data-variant="c"] .sm-sponsors2__heading{font-size:11px; text-transform:uppercase; letter-spacing:.05em; color:var(--ink-3); margin:0 0 18px;}
+  [data-variant="c"] .sm-sponsors2__row{display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:24px;}
   [data-variant="c"] .sm-sponsors2__col{display:flex; flex-direction:column; align-items:flex-start; gap:10px;}
-  [data-variant="c"] .sm-sponsors2__col span{font-size:11.5px; color:rgba(255,255,255,.6);}
-  [data-variant="c"] .sm-sponsors2__div{width:1px; align-self:stretch; background:rgba(255,255,255,.18);}
-  [data-variant="c"] .sm-sponsors2 .lg--bund,[data-variant="c"] .sm-sponsors2 .lg--liechtenstein,[data-variant="c"] .sm-sponsors2 .lg--myswitzerland{filter:brightness(0) invert(1);}
-  [data-variant="c"] .sm-sponsors2 .lg--cantons{opacity:.9; background-color:rgba(255,255,255,.06); border-radius:8px;}
-  [data-variant="c"] .sm-sponsors2__rule{height:1px; background:rgba(255,255,255,.15); margin:26px 0 20px;}
-  [data-variant="c"] .sm-sponsors2__fachpartner h5{font-size:11px; text-transform:uppercase; letter-spacing:.05em; color:rgba(255,255,255,.5); margin:0 0 14px;}
+  [data-variant="c"] .sm-sponsors2__col span{font-size:11.5px; color:var(--ink-3);}
+  [data-variant="c"] .sm-sponsors2__fl{height:24px; width:auto;}
+  [data-variant="c"] .sm-sponsors2__div{width:1px; align-self:stretch; background:rgba(16,24,20,.14);}
+  [data-variant="c"] .sm-sponsors2__rule{height:1px; background:rgba(16,24,20,.12); margin:26px 0 20px;}
+  [data-variant="c"] .sm-sponsors2__fachpartner h5{font-size:11px; text-transform:uppercase; letter-spacing:.05em; color:var(--ink-3); margin:0 0 14px;}
   [data-variant="c"] .sm-sponsors2__fp-row{display:flex; flex-wrap:wrap; gap:10px;}
-  [data-variant="c"] .sm-sponsors2__fp-row span{background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.22); border-radius:999px; padding:7px 14px; font-size:11.5px; color:rgba(255,255,255,.8);}
-  [data-variant="c"] .sm-promo-wrap{background:#f3ede0; padding:56px 40px;}
+  [data-variant="c"] .sm-sponsors2__fp-row span{background:rgba(16,24,20,.05); border:1px solid rgba(16,24,20,.14); border-radius:999px; padding:7px 14px; font-size:11.5px; color:var(--ink-2);}
+  [data-variant="c"] .sm-promo-wrap{background:#f3ede0; width:100vw; margin-left:calc(50% - 50vw); margin-right:calc(50% - 50vw); padding:56px 0;}
+  [data-variant="c"] .sm-promo-inner{max-width:1180px; margin:0 auto; padding:0 40px;}
   [data-variant="c"] .sm-promo{display:grid; grid-template-columns:repeat(4,1fr); gap:16px;}
   [data-variant="c"] .sm-promo__tile{position:relative; height:160px; border-radius:16px; overflow:hidden; margin:0; box-shadow:0 8px 20px rgba(0,0,0,.1);}
   [data-variant="c"] .sm-promo__label{position:absolute; left:10px; bottom:10px; right:auto; background:rgba(255,255,255,.18); backdrop-filter:blur(10px); border:1px solid rgba(255,255,255,.4); border-radius:999px; padding:6px 12px; font-weight:700; font-size:10.5px; color:#fff;}
-  [data-variant="c"] .sm-band{position:relative; min-height:300px; display:flex; align-items:center; padding:0; color:#fff;}
-  [data-variant="c"] .sm-band__bg{position:absolute; top:0; bottom:0; left:auto; right:auto; width:100vw; margin-left:calc(50% - 50vw); margin-right:calc(50% - 50vw); background-size:cover; background-position:center;}
-  [data-variant="c"] .sm-band::before{content:""; position:absolute; top:0; bottom:0; left:auto; right:auto; width:100vw; margin-left:calc(50% - 50vw); margin-right:calc(50% - 50vw); background:linear-gradient(260deg, rgba(30,26,14,.45) 0%, rgba(30,26,14,.1) 55%, rgba(30,26,14,0) 78%); z-index:1;}
-  [data-variant="c"] .sm-band__mark-bg{display:none;}
-  [data-variant="c"] .sm-band__inner{position:relative; z-index:2; margin:32px 40px 32px auto; max-width:420px; display:flex; align-items:flex-start; gap:18px; background:rgba(255,255,255,.14); backdrop-filter:blur(24px) saturate(1.4); -webkit-backdrop-filter:blur(24px) saturate(1.4); border:1px solid rgba(255,255,255,.4); border-radius:22px; padding:28px 30px; box-shadow:0 16px 40px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.4);}
-  [data-variant="c"] .sm-band__mark{width:56px; height:56px; flex:none; background:#fff; border-radius:12px; display:flex; align-items:center; justify-content:center;}
-  [data-variant="c"] .sm-band__mark svg{width:30px; height:30px;}
-  [data-variant="c"] .sm-band h2{font-size:20px; color:#fff;}
-  [data-variant="c"] .sm-band p{color:rgba(255,255,255,.85); max-width:40ch;}
-  [data-variant="c"] .sm-band .sm-cta{color:#fff;}
+  [data-variant="c"] .sm-utility-band{position:relative; width:100vw; margin-left:calc(50% - 50vw); margin-right:calc(50% - 50vw); background:linear-gradient(180deg,#eef4f0 0%,#e6efe9 100%); padding:64px 0;}
+  [data-variant="c"] .sm-utility-inner{max-width:1180px; margin:0 auto; padding:0 40px; display:flex; flex-direction:column; gap:24px;}
+  [data-variant="c"] .sm-util-card{display:flex; align-items:stretch; background:rgba(255,255,255,.6); backdrop-filter:blur(20px) saturate(1.3); -webkit-backdrop-filter:blur(20px) saturate(1.3); border:1px solid rgba(255,255,255,.75); border-radius:24px; overflow:hidden; box-shadow:0 16px 40px rgba(20,40,30,.1);}
+  [data-variant="c"] .sm-util-card__img{flex:0 0 42%; min-height:280px; background-size:cover; background-position:center;}
+  [data-variant="c"] .sm-util-card__text{flex:1; padding:36px 40px; display:flex; align-items:center; gap:18px;}
+  [data-variant="c"] .sm-util-card__text h2{font-size:20px; color:var(--ink); margin-bottom:6px;}
+  [data-variant="c"] .sm-util-card__text p{color:var(--ink-2); max-width:44ch;}
+  [data-variant="c"] .sm-band__mark{width:52px; height:52px; flex:none; background:#fff; border-radius:12px; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 14px rgba(0,0,0,.1);}
+  [data-variant="c"] .sm-band__mark svg{width:28px; height:28px;}
+  [data-variant="c"] .sm-util-grid{display:grid; grid-template-columns:1fr 1fr; gap:24px;}
+  [data-variant="c"] .sm-util-grid .sm-util-card{flex-direction:column;}
+  [data-variant="c"] .sm-util-grid .sm-util-card__img{flex:none; height:200px;}
+  [data-variant="c"] .sm-util-grid .sm-util-card__text{padding:24px 26px;}
   [data-variant="c"] .reveal{opacity:0; transform:translateY(40px); transition:opacity .7s cubic-bezier(.25,.46,.45,.94), transform .7s cubic-bezier(.25,.46,.45,.94);}
   [data-variant="c"] .reveal.is-visible{opacity:1; transform:translateY(0);}
   [data-variant="c"] .reveal-stagger.is-visible :nth-child(1){transition-delay:0ms;}
@@ -305,6 +312,10 @@
     [data-variant="c"] .sm-row__text{margin:20px; max-width:none;}
     [data-variant="c"] .sm-intake__activities{grid-template-columns:repeat(2,1fr);}
     [data-variant="c"] .sm-intake__q{font-size:21px;}
+    [data-variant="c"] .sm-util-card{flex-direction:column;}
+    [data-variant="c"] .sm-util-card__img{flex:none; height:200px;}
+    [data-variant="c"] .sm-util-grid{grid-template-columns:1fr;}
+    [data-variant="c"] .sm-utility-inner{padding:0 20px;}
   }
   @media (prefers-reduced-motion:reduce){
     [data-variant="c"] .reveal,[data-variant="c"] .sm-content,[data-variant="c"] .sm-intake{opacity:1; transform:none; transition:none;}
@@ -674,8 +685,10 @@
       <!-- PERSONALIZED CONTENT -->
       <div class="sm-content" id="c-content">
         <div class="sm-hero">
-          <div class="sm-hero__img ph ph--hero js-parallax" id="c-parallax"></div>
-          <div class="sm-hero__scrim"></div>
+          <div class="sm-hero__bleed">
+            <div class="sm-hero__img ph ph--hero js-parallax" id="c-parallax"></div>
+            <div class="sm-hero__scrim"></div>
+          </div>
           <div class="sm-hero__copy reveal is-visible">
             <div class="sm-personal-strip">
               <span id="c-personal-summary">Für dich zusammengestellt</span>
@@ -706,7 +719,7 @@
 
           <div class="sm-rows sm-rows--merged">
             <div class="sm-row reveal">
-              <div class="sm-row__img ph ph--badespass js-parallax"></div>
+              <div class="sm-row__bleed"><div class="sm-row__img ph ph--badespass js-parallax"></div></div>
               <div class="sm-row__text">
                 <h2>Routen mit Badespass</h2>
                 <p>Fluss- und Seebäder bieten eine willkommene Abkühlung entlang von SchweizMobil-Routen. Entdecke unsere Auswahl.</p>
@@ -715,7 +728,7 @@
             </div>
 
             <div class="sm-row reveal">
-              <div class="sm-row__img ph ph--wanderungen-wasser js-parallax"></div>
+              <div class="sm-row__bleed"><div class="sm-row__img ph ph--wanderungen-wasser js-parallax"></div></div>
               <div class="sm-row__text">
                 <h2>Die schönsten Wanderungen am Wasser</h2>
                 <p>Ob Bergseen, tosende Wasserfälle, plätschernde Bäche oder lauschige Badeplätze – diese Wanderwege verlaufen in unmittelbarer Nähe von Gewässern.</p>
@@ -725,69 +738,80 @@
           </div>
 
           <div class="sm-promo-wrap">
-            <div class="sm-promo reveal-stagger">
-              <div class="reveal sm-promo__tile ph ph--familienwanderungen"><div class="sm-promo__label">Familienwanderungen</div></div>
-              <div class="reveal sm-promo__tile ph ph--gravelbike"><div class="sm-promo__label">Gravelbike-Touren</div></div>
-              <div class="reveal sm-promo__tile ph ph--genial-legal"><div class="sm-promo__label">Genial legal</div></div>
-              <div class="reveal sm-promo__tile ph ph--hindernisfrei"><div class="sm-promo__label">Hindernisfreie Wege</div></div>
-            </div>
-          </div>
-
-          <div class="sm-band reveal">
-            <div class="sm-band__bg ph ph--plus-map"></div>
-            <svg class="sm-band__mark-bg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="13" y="2" width="6" height="28" fill="#fff"/><rect x="2" y="13" width="28" height="6" fill="#fff"/></svg>
-            <div class="sm-band__inner">
-              <div class="sm-band__mark"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="13" y="2" width="6" height="28" fill="#d4021c"/><rect x="2" y="13" width="28" height="6" fill="#d4021c"/></svg></div>
-              <div>
-                <h2>SchweizMobil Plus</h2>
-                <p>SchweizMobil Plus ist der perfekte Begleiter für alle, die gerne in der Natur unterwegs sind. Zusätzlich zu den bewährten Funktionen bietet dir SchweizMobil Plus eine Vielzahl nützlicher Tools für deine Tourenplanung.</p>
-                <span class="sm-cta">Mehr erfahren</span>
+            <div class="sm-promo-inner">
+              <div class="sm-promo reveal-stagger">
+                <div class="reveal sm-promo__tile ph ph--familienwanderungen"><div class="sm-promo__label">Familienwanderungen</div></div>
+                <div class="reveal sm-promo__tile ph ph--gravelbike"><div class="sm-promo__label">Gravelbike-Touren</div></div>
+                <div class="reveal sm-promo__tile ph ph--genial-legal"><div class="sm-promo__label">Genial legal</div></div>
+                <div class="reveal sm-promo__tile ph ph--hindernisfrei"><div class="sm-promo__label">Hindernisfreie Wege</div></div>
               </div>
             </div>
           </div>
 
-          <div class="sm-rows">
-            <div class="sm-row reveal">
-              <div class="sm-row__img ph ph--app"></div>
-              <div class="sm-row__text">
-                <h2>App SchweizMobil</h2>
-                <p>Die kostenlose App SchweizMobil ist der perfekte Begleiter für alle, die gerne draussen unterwegs sind – egal ob im Sommer oder im Winter.</p>
-                <span class="sm-cta">Mehr erfahren</span>
+          <div class="sm-utility-band">
+            <div class="sm-utility-inner">
+              <div class="sm-util-card reveal">
+                <div class="sm-util-card__img ph ph--plus-map"></div>
+                <div class="sm-util-card__text">
+                  <div class="sm-band__mark"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="13" y="2" width="6" height="28" fill="#d4021c"/><rect x="2" y="13" width="28" height="6" fill="#d4021c"/></svg></div>
+                  <div>
+                    <h2>SchweizMobil Plus</h2>
+                    <p>SchweizMobil Plus ist der perfekte Begleiter für alle, die gerne in der Natur unterwegs sind. Zusätzlich zu den bewährten Funktionen bietet dir SchweizMobil Plus eine Vielzahl nützlicher Tools für deine Tourenplanung.</p>
+                    <span class="sm-cta">Mehr erfahren</span>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="sm-row reveal">
-              <div class="sm-row__img ph ph--aktuelles"></div>
-              <div class="sm-row__text">
-                <h2>Aktuelles</h2>
-                <p>Du möchtest mehr zu SchweizMobil erfahren? Hier findest du aktuelle Beiträge zum Thema Langsamverkehr, Neuigkeiten rund um SchweizMobil sowie Informationen für Medienschaffende.</p>
-                <span class="sm-cta">Mehr erfahren</span>
+
+              <div class="sm-util-grid">
+                <div class="sm-util-card reveal">
+                  <div class="sm-util-card__img ph ph--app"></div>
+                  <div class="sm-util-card__text">
+                    <div>
+                      <h2>App SchweizMobil</h2>
+                      <p>Die kostenlose App SchweizMobil ist der perfekte Begleiter für alle, die gerne draussen unterwegs sind – egal ob im Sommer oder im Winter.</p>
+                      <span class="sm-cta">Mehr erfahren</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="sm-util-card reveal">
+                  <div class="sm-util-card__img ph ph--aktuelles"></div>
+                  <div class="sm-util-card__text">
+                    <div>
+                      <h2>Aktuelles</h2>
+                      <p>Du möchtest mehr zu SchweizMobil erfahren? Hier findest du aktuelle Beiträge zum Thema Langsamverkehr, Neuigkeiten rund um SchweizMobil sowie Informationen für Medienschaffende.</p>
+                      <span class="sm-cta">Mehr erfahren</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
           <footer class="sm-footer reveal">
-            <div class="sm-footer__cols">
-              <div class="sm-footer__col">
-                <h4>Impressum</h4>
-                <a>Copyright und Datenschutz</a><a>Gewährleistungs- und Haftungsausschluss</a><a>Über uns</a><a>SchweizMobil für Partner</a><a>Kontakt</a><a>Legende</a>
+            <div class="sm-footer__inner">
+              <div class="sm-footer__cols">
+                <div class="sm-footer__col">
+                  <h4>Impressum</h4>
+                  <a>Copyright und Datenschutz</a><a>Gewährleistungs- und Haftungsausschluss</a><a>Über uns</a><a>SchweizMobil für Partner</a><a>Kontakt</a><a>Legende</a>
+                </div>
               </div>
-            </div>
-            <div class="sm-sponsors2">
-              <h5 class="sm-sponsors2__heading">Träger von SchweizMobil</h5>
-              <div class="sm-sponsors2__row">
-                <div class="sm-sponsors2__col"><div class="lg lg--bund" role="img" aria-label="Schweizerische Eidgenossenschaft"></div><span>Bund</span></div>
-                <div class="sm-sponsors2__div"></div>
-                <div class="sm-sponsors2__col"><div class="lg lg--cantons" role="img" aria-label="Kantone"></div><span>Kantone</span></div>
-                <div class="sm-sponsors2__div"></div>
-                <div class="sm-sponsors2__col"><div class="lg lg--liechtenstein" role="img" aria-label="Fürstentum Liechtenstein"></div><span>Fürstentum Liechtenstein</span></div>
-                <div class="sm-sponsors2__div"></div>
-                <div class="sm-sponsors2__col"><div class="lg lg--myswitzerland" role="img" aria-label="Schweiz Tourismus"></div><span>Schweiz Tourismus</span></div>
-              </div>
-              <div class="sm-sponsors2__rule"></div>
-              <div class="sm-sponsors2__fachpartner">
-                <h5>Fachpartner</h5>
-                <div class="sm-sponsors2__fp-row">
-                  <span>Schweizer Wanderwege</span><span>Swiss Canoe</span><span>langlauf.ch</span><span>Romandie Ski de Fond</span>
+              <div class="sm-sponsors2">
+                <h5 class="sm-sponsors2__heading">Träger von SchweizMobil</h5>
+                <div class="sm-sponsors2__row">
+                  <div class="sm-sponsors2__col"><div class="lg lg--bund" role="img" aria-label="Schweizerische Eidgenossenschaft"></div><span>Bund</span></div>
+                  <div class="sm-sponsors2__div"></div>
+                  <div class="sm-sponsors2__col"><div class="lg lg--cantons" role="img" aria-label="Kantone"></div><span>Kantone</span></div>
+                  <div class="sm-sponsors2__div"></div>
+                  <div class="sm-sponsors2__col"><svg class="sm-sponsors2__fl" viewBox="0 0 77.555 29.536" width="77.555" height="29.536" preserveAspectRatio="xMinYMid" version="1.1" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fürstentum Liechtenstein"><defs><clipPath id="fl-clip"><path style="fill:none" d="M0 0h43.79v29.69H0Z"/></clipPath><style>.fl-5{fill:#1d1d1b}.fl-6{fill:#ffce00}</style></defs><g transform="translate(.002 -11.578) scale(1.77102)"><g><path style="fill:#005cb9" d="M.1 0 .05 14.77l43.7.15.04-14.78L.37 0Z"/><path transform="rotate(-89.81 21.873 22.23)" style="fill:#e30613" d="M14.49.38h14.77v43.7H14.49Z"/><g clip-path="url(#fl-clip)"><path class="fl-5" d="M11.65 3.94a1.66 1.66 0 0 1 .16-.27A1.48 1.48 0 0 1 12 3.4a1.53 1.53 0 0 1-.19-.27 1.54 1.54 0 0 1-.16-.27 1.17 1.17 0 0 1-.16.27 1.54 1.54 0 0 1-.19.27 1.6 1.6 0 0 1 .19.27c.16.24.16.27.16.27"/><path class="fl-6" d="m11.58 3.19-.15.21.14.21.08.12.08-.12.15-.21-.15-.21-.08-.12-.07.12"/><path class="fl-5" d="M11.65 4.07a1.39 1.39 0 0 1-.24-.14 1.53 1.53 0 0 1-.24-.17 1.33 1.33 0 0 1-.24.17 1.14 1.14 0 0 1-.24.15 1.11 1.11 0 0 1 .24.14 1.38 1.38 0 0 1 .24.17 1.18 1.18 0 0 1 .24-.17 1.37 1.37 0 0 1 .24-.14"/><path class="fl-6" d="m11 4.13.19.13.19-.13.11-.07-.13-.06-.19-.13L11 4l-.11.07.11.07"/><path class="fl-5" d="M12.62 4.07a1 1 0 0 1-.24-.14 1.19 1.19 0 0 1-.24-.17l-.24.17a1 1 0 0 1-.25.14 1.16 1.16 0 0 1 .25.15 1.36 1.36 0 0 1 .24.17 1.19 1.19 0 0 1 .24-.17 1.22 1.22 0 0 1 .24-.15"/><path class="fl-6" d="m11.94 4.14.19.13.19-.13.11-.07-.1-.07-.19-.13-.2.13-.11.07.11.07"/><path class="fl-5" d="M11.65 4.07a1.19 1.19 0 0 1-.14.25 1.44 1.44 0 0 1-.17.24 1.92 1.92 0 0 0 .16.25l.16.24.16-.24a2.26 2.26 0 0 0 .18-.26 1.26 1.26 0 0 1-.17-.24 1.31 1.31 0 0 1-.14-.25"/><path class="fl-6" d="m11.71 4.75.14-.19-.13-.19-.07-.11-.07.11-.13.19s.07.11.13.21l.07.09.07-.09"/><path class="fl-5" d="M11.38 4.07a.27.27 0 1 0 .27-.27.27.27 0 0 0-.27.27"/><path class="fl-6" d="M11.8 4.07a.15.15 0 1 1-.3 0 .15.15 0 1 1 .3 0"/><path class="fl-5" d="m15.3 11.46.18-.23a8.7 8.7 0 0 0 .44-.87s.5-1.42.84-1.42c0 0 .15-.07 0-.17a2.42 2.42 0 0 0-.47-.24.33.33 0 0 0 .16-.29.3.3 0 0 0-.05-.24.3.3 0 0 0 .22-.3.32.32 0 0 0-.2-.29.31.31 0 0 0-.12-.59.32.32 0 0 0 .17-.28.31.31 0 0 0-.31-.31.34.34 0 0 0 0-.16.31.31 0 0 0-.31-.31.31.31 0 0 0-.19.07.25.25 0 0 0 0-.08.31.31 0 0 0-.31-.31.31.31 0 0 0-.26.13.31.31 0 0 0-.57-.11.3.3 0 0 0-.28-.19.31.31 0 0 0-.29.2.31.31 0 0 0-.26-.16.31.31 0 0 0-.3.24.31.31 0 0 0-.55.08.31.31 0 0 0-.53.06.27.27 0 0 0-.16-.07.6.6 0 0 0 .1-.32.58.58 0 0 0-1.16 0 .52.52 0 0 0 .09.32.29.29 0 0 0-.18.08.32.32 0 0 0-.28-.18.31.31 0 0 0-.25.12.31.31 0 0 0-.29-.22.32.32 0 0 0-.26.14.31.31 0 0 0-.3-.24.31.31 0 0 0-.27.15.31.31 0 0 0-.57 0 .32.32 0 0 0-.27-.15.31.31 0 0 0-.31.25.31.31 0 0 0-.57.18.37.37 0 0 0 0 .08.31.31 0 0 0-.46.4.31.31 0 0 0-.31.31.29.29 0 0 0 .14.25.31.31 0 0 0-.13.59.32.32 0 0 0-.2.28.3.3 0 0 0 .22.3.3.3 0 0 0-.11.24.33.33 0 0 0 .16.28 2.53 2.53 0 0 0-.46.24c-.1.1 0 .16 0 .16.34 0 .83 1.44.83 1.44a8 8 0 0 0 .43.87s.13.18.18.23z"/><path class="fl-6" d="M7.28 8.21a.19.19 0 0 1-.2.2.2.2 0 0 1-.2-.2.19.19 0 0 1 .21-.21.2.2 0 0 1 .2.2m-.12-.52a.2.2 0 0 1-.4 0 .2.2 0 1 1 .4 0m.01-.57a.19.19 0 0 1-.2.2.2.2 0 1 1 .2-.2m.17-.59a.2.2 0 0 1-.2.2.2.2 0 1 1 .2-.2m.31-.46a.2.2 0 1 1-.2-.2.2.2 0 0 1 .2.2m.49-.32a.19.19 0 0 1-.2.2.19.19 0 0 1-.2-.2.2.2 0 0 1 .2-.2.2.2 0 0 1 .2.2m.56-.12a.2.2 0 0 1-.2.2.19.19 0 0 1-.2-.2.2.2 0 0 1 .4 0m.55-.04a.2.2 0 0 1-.2.2.2.2 0 0 1-.19-.2.2.2 0 0 1 .2-.2.2.2 0 0 1 .2.2m.55.05a.2.2 0 1 1-.4 0 .2.2 0 0 1 .4 0m.56.1a.2.2 0 1 1-.39 0 .2.2 0 0 1 .39 0m.54.1a.2.2 0 1 1-.2-.2.2.2 0 0 1 .2.2m.47.11a.2.2 0 0 1-.2.2.2.2 0 0 1 0-.4.2.2 0 0 1 .2.2m.42 1.8a.18.18 0 0 1-.18.18.18.18 0 0 1-.18-.18.18.18 0 0 1 .18-.18.18.18 0 0 1 .18.18m-.01-.46a.16.16 0 0 1-.16.16.16.16 0 1 1 .16-.16m-.01-.46a.15.15 0 1 1-.3 0 .15.15 0 0 1 .3 0m-.02-.44a.13.13 0 1 1-.26 0 .13.13 0 0 1 .13-.13.14.14 0 0 1 .13.13M11.76 6a.12.12 0 1 1-.11-.12.12.12 0 0 1 .11.12M16 8.24a.2.2 0 0 0 .39 0 .2.2 0 0 0-.2-.2.2.2 0 0 0-.2.2m.11-.54a.2.2 0 1 0 .39 0 .2.2 0 0 0-.2-.2.2.2 0 0 0-.2.2m0-.57a.2.2 0 0 0 .2.2.2.2 0 0 0 0-.4.2.2 0 0 0-.2.2m-.17-.58a.2.2 0 1 0 .2-.2.2.2 0 0 0-.2.2m-.3-.46a.2.2 0 1 0 .2-.2.2.2 0 0 0-.2.2m-.48-.33a.2.2 0 1 0 .2-.2.2.2 0 0 0-.2.2m-.56-.12a.2.2 0 0 0 .19.2.2.2 0 0 0 .2-.2.2.2 0 0 0-.2-.2.19.19 0 0 0-.2.2M14 5.6a.2.2 0 1 0 .2-.2.2.2 0 0 0-.2.2m-.54.04a.2.2 0 1 0 .2-.2.2.2 0 0 0-.2.2m-.55.1a.2.2 0 0 0 .4 0 .2.2 0 0 0-.2-.2.2.2 0 0 0-.2.2m-.54.09a.2.2 0 0 0 .19.2.2.2 0 1 0 0-.4.19.19 0 0 0-.2.19m-.47.12a.19.19 0 0 0 .2.2.2.2 0 0 0 .2-.2.2.2 0 1 0-.39 0M7.51 8.37a.82.82 0 0 1 .36.12 3.86 3.86 0 0 1-.29-1.06A1.1 1.1 0 0 1 8.5 6.2a6.31 6.31 0 0 1 2.5.27v-.22A8.33 8.33 0 0 0 8.43 6a1.3 1.3 0 0 0-1.12 1 2.56 2.56 0 0 0 .2 1.36m3.41-.21A1.28 1.28 0 0 1 11.2 8a14.61 14.61 0 0 0 .17-1.69h-.17a10.79 10.79 0 0 1-.28 1.88m4.84.21a.85.85 0 0 0-.37.12 4 4 0 0 0 .3-1 1.11 1.11 0 0 0-.91-1.24 6.31 6.31 0 0 0-2.52.25v-.22A8.27 8.27 0 0 1 14.85 6 1.3 1.3 0 0 1 16 7a2.57 2.57 0 0 1-.21 1.36m-3.44-.21a1.28 1.28 0 0 0-.28-.15 14.5 14.5 0 0 1-.16-1.69h.17a10.86 10.86 0 0 0 .27 1.88"/><path class="fl-6" d="M11.63 8c1 0 1.11 1.2 1.11 1.2.68-1 1.26-1.09 1.26-1.09 1-.08.8 1.24.8 1.24a1.16 1.16 0 0 1 1.82-.59 4.68 4.68 0 0 0-.85 1.55 5.6 5.6 0 0 1-.49.87h-.07a.33.33 0 0 0-.06-.27.66.66 0 0 1-.05.24h-.12a.36.36 0 0 0-.07-.26.61.61 0 0 1 0 .24h-.12a.34.34 0 0 0-.07-.26.63.63 0 0 1 0 .24h-.12a.35.35 0 0 0-.08-.26.64.64 0 0 1 0 .24h-.12a.35.35 0 0 0-.08-.26.63.63 0 0 1 0 .24L14 11a.33.33 0 0 0-.09-.26.67.67 0 0 1 0 .24h-.13a.34.34 0 0 0-.09-.26.6.6 0 0 1 0 .24h-.12a.36.36 0 0 0-.09-.26.61.61 0 0 1 0 .24h-.18a.34.34 0 0 0-.1-.26.57.57 0 0 1 0 .24h-.12a.35.35 0 0 0-.1-.26.61.61 0 0 1 0 .24h-.12a.34.34 0 0 0-.11-.25.65.65 0 0 1 0 .24h-.13a.35.35 0 0 0-.11-.25.67.67 0 0 1 0 .25h-.12a.35.35 0 0 0-.12-.25.63.63 0 0 1 0 .24h-.13a.34.34 0 0 0-.12-.25.61.61 0 0 1 0 .24h-.13a.35.35 0 0 0-.13-.24.65.65 0 0 1 0 .24h-.2a.62.62 0 0 1 0-.24.33.33 0 0 0-.13.24h-.13a.62.62 0 0 1 0-.24.35.35 0 0 0-.12.25H11a.65.65 0 0 1 0-.25.33.33 0 0 0-.12.25h-.13a.61.61 0 0 1 0-.24.34.34 0 0 0-.11.25h-.13a.61.61 0 0 1 0-.24.35.35 0 0 0-.11.25h-.12a.6.6 0 0 1 0-.24.35.35 0 0 0-.11.25h-.12a.68.68 0 0 1 0-.24.34.34 0 0 0-.1.25h-.13a.63.63 0 0 1 0-.24.36.36 0 0 0-.1.25H9.6a.55.55 0 0 1 0-.24.34.34 0 0 0-.09.26h-.12a.61.61 0 0 1 0-.24.36.36 0 0 0-.09.26l-.2.03a.69.69 0 0 1 0-.24.33.33 0 0 0-.1.24h-.13a.62.62 0 0 1 0-.24.37.37 0 0 0-.08.27h-.12a.66.66 0 0 1 0-.24.35.35 0 0 0-.07.26h-.12a.56.56 0 0 1 0-.24.35.35 0 0 0-.07.26h-.12a.61.61 0 0 1 0-.24.35.35 0 0 0-.29.37 5.69 5.69 0 0 1-.49-.87 4.69 4.69 0 0 0-.84-1.56 1.16 1.16 0 0 1 1.81.6s-.2-1.37.78-1.23c0 0 .58.06 1.25 1.1 0 0 .09-1.2 1.12-1.19m-.4-2.54a.45.45 0 0 0 .82 0 1.59 1.59 0 0 0-.41-.05 1.56 1.56 0 0 0-.41.05m.77-.4a.46.46 0 0 0-.23-.21v.19H12m-.53-.01v-.19a.47.47 0 0 0-.23.21h.23"/><path class="fl-6" d="M11.64 5.35a1.71 1.71 0 0 0-.44.06.32.32 0 0 1 0-.09.42.42 0 0 1 0-.09h.37v-.3h.11a1.19 1.19 0 0 0 0 .19v.11h.37v.09a.6.6 0 0 1 0 .09 1.68 1.68 0 0 0-.44-.06"/><path class="fl-5" d="M7.43 9.71a.62.62 0 0 1 .4.17 2.52 2.52 0 0 0-.19-.54 1.39 1.39 0 0 1 .48.47.94.94 0 0 1 .15-.31 4.89 4.89 0 0 0 0 1.11 4.77 4.77 0 0 0-.87-.91m1.7-.24a.58.58 0 0 1 .34.1 2.58 2.58 0 0 0-.15-.62 1.78 1.78 0 0 1 .4.48 1.54 1.54 0 0 0 .15-.28 8.93 8.93 0 0 0 .16 1.3 4.61 4.61 0 0 0-.87-1m2.02-.37s.23 0 .28.14c.05.14.23-.39.21-.52a1.87 1.87 0 0 1 .16.51 1.27 1.27 0 0 1 .34-.2 4.17 4.17 0 0 0-.56 1.38 2.64 2.64 0 0 0-.43-1.3m3.07.38a.56.56 0 0 0-.35.1 2.5 2.5 0 0 1 .17-.61 1.79 1.79 0 0 0-.42.47 1.31 1.31 0 0 1-.14-.29 9.94 9.94 0 0 1-.19 1.28 4.93 4.93 0 0 1 .92-.94m1.57.35a1 1 0 0 0-.42.11 2.42 2.42 0 0 1 .24-.52 1.36 1.36 0 0 0-.52.43 1 1 0 0 0-.13-.32 6 6 0 0 1-.15 1.19 4.88 4.88 0 0 1 1-.89"/></g></g></g></svg><span>Fürstentum Liechtenstein</span></div>
+                  <div class="sm-sponsors2__div"></div>
+                  <div class="sm-sponsors2__col"><div class="lg lg--myswitzerland" role="img" aria-label="Schweiz Tourismus"></div><span>Schweiz Tourismus</span></div>
+                </div>
+                <div class="sm-sponsors2__rule"></div>
+                <div class="sm-sponsors2__fachpartner">
+                  <h5>Fachpartner</h5>
+                  <div class="sm-sponsors2__fp-row">
+                    <span>Schweizer Wanderwege</span><span>Swiss Canoe</span><span>langlauf.ch</span><span>Romandie Ski de Fond</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -907,7 +931,7 @@
     var hero = document.getElementById('c-parallax');
     var headline = document.getElementById('c-hero-headline');
     if (act && ACTIVITY_PHOTO[act]){
-      hero.className = 'sm-hero__img ph ' + ACTIVITY_PHOTO[act];
+      hero.className = 'sm-hero__img ph js-parallax ' + ACTIVITY_PHOTO[act];
       headline.textContent = ACTIVITY_HEADLINE[act];
     }
     var bits = [];
