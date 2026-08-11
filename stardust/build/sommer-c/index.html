@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SchweizMobil – Sommer</title>
+<meta name="description" content="SchweizMobil: die offizielle Plattform der Schweiz für Wandern, Velo, Mountainbike, Skating, Kanu und Winter — mit persönlicher Routenempfehlung basierend auf Aktivität, Region, Barrierefreiheit und Datum.">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="sm-header">
+      <div class="sm-logo lg lg--wordmark-onDark" role="img" aria-label="SchweizMobil"></div>
+      <div class="sm-header__right">
+        <div class="sm-login">★ Plus · Anmelden</div>
+        <svg class="sm-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Suche"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+        <svg class="sm-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Einstellungen"><path d="M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z"/></svg>
+      </div>
+    </header>
+
+    <div class="sm-body">
+      <!-- INTAKE -->
+      <div class="sm-intake" id="c-intake">
+        <div class="sm-intake__bg ph ph--hero-water"></div>
+        <div class="sm-intake__scrim"></div>
+        <div class="sm-intake__inner">
+        <div class="sm-intake__topbar">
+          <button class="sm-intake__back" id="c-back" aria-label="Zurück">
+            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.5 4.5 7 10l5.5 5.5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Zurück
+          </button>
+          <div class="sm-intake__progress">
+            <div class="sm-intake__dot" data-dot="1"></div>
+            <div class="sm-intake__dot" data-dot="2"></div>
+            <div class="sm-intake__dot" data-dot="3"></div>
+            <div class="sm-intake__dot" data-dot="4"></div>
+          </div>
+        </div>
+
+        <div class="sm-intake__step is-active" data-step="1">
+          <div class="sm-intake__eyebrow">Frage 1 von 4</div>
+          <div class="sm-intake__q">Was möchtest du unternehmen?</div>
+          <div class="sm-intake__activities">
+            <button class="sm-intake__activity" data-activity="hike"><img class="lg lg--icon-hike" alt=""><span>Wandern</span></button>
+            <button class="sm-intake__activity" data-activity="cycle"><img class="lg lg--icon-cycle" alt=""><span>Velo</span></button>
+            <button class="sm-intake__activity" data-activity="mountainbike"><img class="lg lg--icon-mountainbike" alt=""><span>Mountainbike</span></button>
+            <button class="sm-intake__activity" data-activity="skate"><img class="lg lg--icon-skate" alt=""><span>Skating</span></button>
+            <button class="sm-intake__activity" data-activity="canoe"><img class="lg lg--icon-canoe" alt=""><span>Kanu</span></button>
+            <button class="sm-intake__activity" data-activity="winter"><img class="lg lg--icon-winter" alt=""><span>Winter</span></button>
+            <button class="sm-intake__activity sm-intake__inspire" data-activity="inspire"><span>✨ Überrasch mich</span></button>
+          </div>
+        </div>
+
+        <div class="sm-intake__step" data-step="2">
+          <div class="sm-intake__eyebrow">Frage 2 von 4</div>
+          <div class="sm-intake__q">Wo bist du unterwegs?</div>
+          <div class="sm-intake__map">
+            <svg class="sm-intake__ch-outline" viewBox="0 0 800 600" preserveAspectRatio="none" aria-hidden="true">
+              <polygon points="529.0,558.5 511.5,556.0 511.5,536.0 490.5,519.0 498.5,497.0 462.0,486.5 433.5,458.0 433.0,407.5 416.0,409.5 375.5,451.0 383.5,479.0 335.0,535.5 283.0,520.5 258.0,537.5 208.0,543.5 157.5,482.0 159.5,415.0 134.0,406.5 80.0,420.5 65.5,438.0 75.5,460.0 48.0,482.5 23.5,483.0 21.5,466.0 44.5,456.0 51.5,431.0 39.5,415.0 49.5,374.0 100.5,332.0 103.5,288.0 135.0,273.5 187.5,215.0 201.5,189.0 173.5,184.0 192.0,153.5 260.0,168.5 278.0,138.5 304.0,127.5 307.0,140.5 332.0,128.5 371.0,136.5 398.0,121.5 458.0,127.5 458.0,111.5 438.0,117.5 426.5,103.0 453.0,77.5 470.0,79.5 482.0,103.5 570.0,113.5 636.5,163.0 609.5,222.0 610.0,258.5 670.0,269.5 671.5,289.0 712.0,311.5 754.0,275.5 770.5,288.0 756.5,352.0 771.5,366.0 769.5,386.0 746.0,384.5 724.0,365.5 699.5,389.0 700.5,410.0 717.5,417.0 710.5,439.0 719.5,457.0 703.0,463.5 684.0,427.5 620.0,445.5 601.5,426.0 600.5,400.0 574.0,397.5 566.5,459.0 528.5,507.0 538.5,538.0 529.0,558.5"/>
+            </svg>
+            <button class="sm-intake__pin" data-region="Basel-Region" style="left:34%; top:16%;">
+              <span class="sm-intake__pin-photo rp rp--basel"></span>
+              <span class="sm-intake__pin-label">Basel</span>
+            </button>
+            <button class="sm-intake__pin" data-region="Zürich-Region" style="left:57%; top:27%;">
+              <span class="sm-intake__pin-photo rp rp--zurich"></span>
+              <span class="sm-intake__pin-label">Zürich</span>
+            </button>
+            <button class="sm-intake__pin" data-region="Ostschweiz" style="left:74%; top:32.5%;">
+              <span class="sm-intake__pin-photo rp rp--ostschweiz"></span>
+              <span class="sm-intake__pin-label">Ostschweiz</span>
+            </button>
+            <button class="sm-intake__pin" data-region="Graubünden" style="left:82%; top:56%;">
+              <span class="sm-intake__pin-photo rp rp--grisons"></span>
+              <span class="sm-intake__pin-label">Graubünden</span>
+            </button>
+            <button class="sm-intake__pin" data-region="Zentralschweiz" style="left:56%; top:42.5%;">
+              <span class="sm-intake__pin-photo rp rp--zentralschweiz"></span>
+              <span class="sm-intake__pin-label">Zentralschweiz</span>
+            </button>
+            <button class="sm-intake__pin" data-region="Wallis" style="left:34%; top:76%;">
+              <span class="sm-intake__pin-photo rp rp--wallis"></span>
+              <span class="sm-intake__pin-label">Wallis</span>
+            </button>
+            <button class="sm-intake__pin" data-region="Tessin" style="left:59%; top:73%;">
+              <span class="sm-intake__pin-photo rp rp--tessin"></span>
+              <span class="sm-intake__pin-label">Tessin</span>
+            </button>
+            <button class="sm-intake__pin" data-region="Genferseegebiet" style="left:8%; top:83%;">
+              <span class="sm-intake__pin-photo rp rp--geneva"></span>
+              <span class="sm-intake__pin-label">Genferseegebiet</span>
+            </button>
+          </div>
+          <div class="sm-intake__caption">Karte vereinfacht, Positionen ungefähr</div>
+        </div>
+
+        <div class="sm-intake__step" data-step="3">
+          <div class="sm-intake__eyebrow">Frage 3 von 4</div>
+          <div class="sm-intake__q">Brauchst du hindernisfreie Wege?</div>
+          <div class="sm-intake__yn">
+            <button data-a11y="yes">Ja</button>
+            <button data-a11y="no">Nein</button>
+          </div>
+        </div>
+
+        <div class="sm-intake__step" data-step="4">
+          <div class="sm-intake__eyebrow">Frage 4 von 4</div>
+          <div class="sm-intake__q">Wann bist du unterwegs?</div>
+          <div class="sm-intake__date-row">
+            <input type="date" id="c-date-input" aria-label="Datum">
+            <button class="sm-intake__continue" id="c-date-continue">Weiter</button>
+          </div>
+          <div class="sm-intake__or">oder</div>
+          <div class="sm-intake__flex-row">
+            <button class="sm-intake__flex-btn" id="c-date-flexible">Ich bin flexibel — zeig mir die besten Tage</button>
+          </div>
+
+          <div class="sm-intake__wx">
+            <div class="sm-intake__wx-title">Wetteraussicht Schweiz</div>
+            <div class="sm-intake__wx-map">
+              <svg class="sm-intake__ch-outline" viewBox="0 0 800 600" preserveAspectRatio="none" aria-hidden="true">
+                <polygon points="529.0,558.5 511.5,556.0 511.5,536.0 490.5,519.0 498.5,497.0 462.0,486.5 433.5,458.0 433.0,407.5 416.0,409.5 375.5,451.0 383.5,479.0 335.0,535.5 283.0,520.5 258.0,537.5 208.0,543.5 157.5,482.0 159.5,415.0 134.0,406.5 80.0,420.5 65.5,438.0 75.5,460.0 48.0,482.5 23.5,483.0 21.5,466.0 44.5,456.0 51.5,431.0 39.5,415.0 49.5,374.0 100.5,332.0 103.5,288.0 135.0,273.5 187.5,215.0 201.5,189.0 173.5,184.0 192.0,153.5 260.0,168.5 278.0,138.5 304.0,127.5 307.0,140.5 332.0,128.5 371.0,136.5 398.0,121.5 458.0,127.5 458.0,111.5 438.0,117.5 426.5,103.0 453.0,77.5 470.0,79.5 482.0,103.5 570.0,113.5 636.5,163.0 609.5,222.0 610.0,258.5 670.0,269.5 671.5,289.0 712.0,311.5 754.0,275.5 770.5,288.0 756.5,352.0 771.5,366.0 769.5,386.0 746.0,384.5 724.0,365.5 699.5,389.0 700.5,410.0 717.5,417.0 710.5,439.0 719.5,457.0 703.0,463.5 684.0,427.5 620.0,445.5 601.5,426.0 600.5,400.0 574.0,397.5 566.5,459.0 528.5,507.0 538.5,538.0 529.0,558.5"/>
+              </svg>
+              <div class="sm-intake__wx-pin" style="left:34%; top:16%;"><span class="sm-intake__wx-pin-icon">☀️</span><span class="sm-intake__wx-pin-city">Basel</span><span class="sm-intake__wx-pin-temp">30°</span></div>
+              <div class="sm-intake__wx-pin" style="left:57%; top:27%;"><span class="sm-intake__wx-pin-icon">⛅</span><span class="sm-intake__wx-pin-city">Zürich</span><span class="sm-intake__wx-pin-temp">29°</span></div>
+              <div class="sm-intake__wx-pin" style="left:38%; top:44%;"><span class="sm-intake__wx-pin-icon">☀️</span><span class="sm-intake__wx-pin-city">Bern</span><span class="sm-intake__wx-pin-temp">29°</span></div>
+              <div class="sm-intake__wx-pin" style="left:8%; top:83%;"><span class="sm-intake__wx-pin-icon">🌤️</span><span class="sm-intake__wx-pin-city">Genf</span><span class="sm-intake__wx-pin-temp">30°</span></div>
+              <div class="sm-intake__wx-pin" style="left:59%; top:73%;"><span class="sm-intake__wx-pin-icon">☀️</span><span class="sm-intake__wx-pin-city">Lugano</span><span class="sm-intake__wx-pin-temp">31°</span></div>
+              <div class="sm-intake__wx-pin" style="left:82%; top:56%;"><span class="sm-intake__wx-pin-icon">⛅</span><span class="sm-intake__wx-pin-city">Chur</span><span class="sm-intake__wx-pin-temp">26°</span></div>
+              <div class="sm-intake__wx-pin" style="left:79%; top:67%;"><span class="sm-intake__wx-pin-icon">🌦️</span><span class="sm-intake__wx-pin-city">St. Moritz</span><span class="sm-intake__wx-pin-temp">19°</span></div>
+            </div>
+            <div class="sm-intake__wx-days" id="c-wx-days">
+              <button class="sm-intake__wx-day is-active" data-day="0">Heute</button>
+              <button class="sm-intake__wx-day" data-day="1">Di</button>
+              <button class="sm-intake__wx-day" data-day="2">Mi</button>
+              <button class="sm-intake__wx-day" data-day="3">Do</button>
+              <button class="sm-intake__wx-day" data-day="4">Fr</button>
+              <button class="sm-intake__wx-day" data-day="5">Sa</button>
+              <button class="sm-intake__wx-day" data-day="6">So</button>
+            </div>
+            <div class="sm-intake__wx-note" id="c-wx-note">Echte, aktuelle Messwerte von heute, aus öffentlichen Wetterdiensten zusammengetragen.</div>
+          </div>
+        </div>
+
+        <button class="sm-intake__skip" id="c-skip">Überspringen — zeig mir die Seite</button>
+        </div>
+      </div>
+
+      <!-- PERSONALIZED CONTENT -->
+      <div class="sm-content" id="c-content">
+        <div class="sm-hero">
+          <div class="sm-hero__bleed">
+            <div class="sm-hero__img ph ph--hero js-parallax" id="c-parallax"></div>
+            <div class="sm-hero__scrim"></div>
+          </div>
+          <div class="sm-hero__copy reveal is-visible">
+            <div class="sm-personal-strip">
+              <span id="c-personal-summary">Für dich zusammengestellt</span>
+            </div>
+            <h1 id="c-hero-headline">Entdecke die schönsten Wege der Schweiz</h1>
+            <p class="sm-personal-strip__note">Region- und Datumsvorschlag sind illustrativ — keine echten Wetter-/Live-Daten in dieser Vorschau.</p>
+          </div>
+        </div>
+
+        <div class="sm-a11y-callout reveal" id="c-a11y-callout" style="display:none;">
+          <div class="sm-a11y-callout__img ph ph--hindernisfrei"></div>
+          <div>
+            <h2>Hindernisfreie Wege</h2>
+            <p>Für dich vorsortiert: Routen mit stufenfreiem Zugang und für Hand- und Elektrofahrräder geeignete Wege.</p>
+            <span class="sm-cta">Mehr erfahren</span>
+          </div>
+        </div>
+
+        <div class="sm-plate">
+          <div class="sm-tiles">
+            <div class="sm-tile" style="background:var(--hike)"><img class="sm-tile__icon lg lg--icon-hike" alt="">Wanderland</div>
+            <div class="sm-tile" style="background:var(--cycle)"><img class="sm-tile__icon lg lg--icon-cycle" alt="">Veloland</div>
+            <div class="sm-tile" style="background:var(--mtb)"><img class="sm-tile__icon lg lg--icon-mountainbike" alt="">Mountainbikeland</div>
+            <div class="sm-tile" style="background:var(--skate)"><img class="sm-tile__icon lg lg--icon-skate" alt="">Skatingland</div>
+            <div class="sm-tile" style="background:var(--canoe)"><img class="sm-tile__icon lg lg--icon-canoe" alt="">Kanuland</div>
+            <div class="sm-tile" style="background:var(--winter)"><img class="sm-tile__icon lg lg--icon-winter" alt="">Winter</div>
+          </div>
+
+          <div class="sm-rows sm-rows--merged">
+            <div class="sm-row reveal">
+              <div class="sm-row__bleed"><div class="sm-row__img ph ph--badespass js-parallax"></div></div>
+              <div class="sm-row__text">
+                <h2>Routen mit Badespass</h2>
+                <p>Fluss- und Seebäder bieten eine willkommene Abkühlung entlang von SchweizMobil-Routen. Entdecke unsere Auswahl.</p>
+                <span class="sm-cta">Mehr erfahren</span>
+              </div>
+            </div>
+
+            <div class="sm-row reveal">
+              <div class="sm-row__bleed"><div class="sm-row__img ph ph--wanderungen-wasser js-parallax"></div></div>
+              <div class="sm-row__text">
+                <h2>Die schönsten Wanderungen am Wasser</h2>
+                <p>Ob Bergseen, tosende Wasserfälle, plätschernde Bäche oder lauschige Badeplätze – diese Wanderwege verlaufen in unmittelbarer Nähe von Gewässern.</p>
+                <span class="sm-cta">Mehr erfahren</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sm-promo-wrap">
+            <div class="sm-promo-inner">
+              <div class="sm-promo reveal-stagger">
+                <div class="reveal sm-promo__tile ph ph--familienwanderungen"><div class="sm-promo__label">Familienwanderungen</div></div>
+                <div class="reveal sm-promo__tile ph ph--gravelbike"><div class="sm-promo__label">Gravelbike-Touren</div></div>
+                <div class="reveal sm-promo__tile ph ph--genial-legal"><div class="sm-promo__label">Genial legal</div></div>
+                <div class="reveal sm-promo__tile ph ph--hindernisfrei"><div class="sm-promo__label">Hindernisfreie Wege</div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sm-utility-band">
+            <div class="sm-utility-inner">
+              <div class="sm-util-card reveal">
+                <div class="sm-util-card__img ph ph--plus-map"></div>
+                <div class="sm-util-card__text">
+                  <div class="sm-band__mark"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="13" y="2" width="6" height="28" fill="#d4021c"/><rect x="2" y="13" width="28" height="6" fill="#d4021c"/></svg></div>
+                  <div>
+                    <h2>SchweizMobil Plus</h2>
+                    <p>SchweizMobil Plus ist der perfekte Begleiter für alle, die gerne in der Natur unterwegs sind. Zusätzlich zu den bewährten Funktionen bietet dir SchweizMobil Plus eine Vielzahl nützlicher Tools für deine Tourenplanung.</p>
+                    <span class="sm-cta">Mehr erfahren</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sm-util-grid">
+                <div class="sm-util-card reveal">
+                  <div class="sm-util-card__img ph ph--app"></div>
+                  <div class="sm-util-card__text">
+                    <div>
+                      <h2>App SchweizMobil</h2>
+                      <p>Die kostenlose App SchweizMobil ist der perfekte Begleiter für alle, die gerne draussen unterwegs sind – egal ob im Sommer oder im Winter.</p>
+                      <span class="sm-cta">Mehr erfahren</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="sm-util-card reveal">
+                  <div class="sm-util-card__img ph ph--aktuelles"></div>
+                  <div class="sm-util-card__text">
+                    <div>
+                      <h2>Aktuelles</h2>
+                      <p>Du möchtest mehr zu SchweizMobil erfahren? Hier findest du aktuelle Beiträge zum Thema Langsamverkehr, Neuigkeiten rund um SchweizMobil sowie Informationen für Medienschaffende.</p>
+                      <span class="sm-cta">Mehr erfahren</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <footer class="sm-footer reveal">
+            <div class="sm-footer__inner">
+              <div class="sm-footer__top">
+                <div class="sm-footer__utils">
+                  <div class="sm-footer__util">
+                    <h4>Sprache</h4>
+                    <div class="sm-lang">
+                      <span class="sm-lang__pill is-active">DE</span>
+                      <span class="sm-lang__pill">FR</span>
+                      <span class="sm-lang__pill">IT</span>
+                      <span class="sm-lang__pill">EN</span>
+                    </div>
+                  </div>
+                  <div class="sm-footer__util">
+                    <h4>Seite teilen</h4>
+                    <div class="sm-share">
+                      <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="6" cy="12" r="2.3"/><circle cx="18" cy="6" r="2.3"/><circle cx="18" cy="18" r="2.3"/><path d="M8.1 10.8 15.9 7.1M8.1 13.2l7.8 3.7"/></svg>
+                      <span>Teilen</span>
+                    </div>
+                  </div>
+                  <div class="sm-footer__util">
+                    <h4>Folge uns auf</h4>
+                    <div class="ph ph--socialmedia" role="img" aria-label="Instagram, Facebook, LinkedIn, YouTube"></div>
+                  </div>
+                </div>
+                <div class="sm-footer__col">
+                  <a>Impressum</a><a>Copyright und Datenschutz</a><a>Gewährleistungs- und Haftungsausschluss</a><a>Über uns</a><a>SchweizMobil für Partner</a><a>Kontakt</a><a>Legende</a>
+                </div>
+              </div>
+              <div class="sm-footer__rule"></div>
+              <div class="sm-sponsors2">
+                <h5 class="sm-sponsors2__heading">Öffentliche Träger von SchweizMobil</h5>
+                <div class="sm-sponsors2__row">
+                  <div class="sm-sponsors2__col"><div class="lg lg--bund" role="img" aria-label="Schweizerische Eidgenossenschaft"></div><span>Bund</span></div>
+                  <div class="sm-sponsors2__div"></div>
+                  <div class="sm-sponsors2__col"><div class="lg lg--cantons" role="img" aria-label="Kantone"></div><span>Kantone</span></div>
+                  <div class="sm-sponsors2__div"></div>
+                  <div class="sm-sponsors2__col"><svg class="sm-sponsors2__fl" viewBox="0 0 77.555 29.536" width="77.555" height="29.536" preserveAspectRatio="xMinYMid" version="1.1" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fürstentum Liechtenstein"><defs><clipPath id="fl-clip"><path style="fill:none" d="M0 0h43.79v29.69H0Z"/></clipPath><style>.fl-5{fill:#1d1d1b}.fl-6{fill:#ffce00}</style></defs><g transform="translate(.002 -11.578) scale(1.77102)"><g><path style="fill:#005cb9" d="M.1 0 .05 14.77l43.7.15.04-14.78L.37 0Z"/><path transform="rotate(-89.81 21.873 22.23)" style="fill:#e30613" d="M14.49.38h14.77v43.7H14.49Z"/><g clip-path="url(#fl-clip)"><path class="fl-5" d="M11.65 3.94a1.66 1.66 0 0 1 .16-.27A1.48 1.48 0 0 1 12 3.4a1.53 1.53 0 0 1-.19-.27 1.54 1.54 0 0 1-.16-.27 1.17 1.17 0 0 1-.16.27 1.54 1.54 0 0 1-.19.27 1.6 1.6 0 0 1 .19.27c.16.24.16.27.16.27"/><path class="fl-6" d="m11.58 3.19-.15.21.14.21.08.12.08-.12.15-.21-.15-.21-.08-.12-.07.12"/><path class="fl-5" d="M11.65 4.07a1.39 1.39 0 0 1-.24-.14 1.53 1.53 0 0 1-.24-.17 1.33 1.33 0 0 1-.24.17 1.14 1.14 0 0 1-.24.15 1.11 1.11 0 0 1 .24.14 1.38 1.38 0 0 1 .24.17 1.18 1.18 0 0 1 .24-.17 1.37 1.37 0 0 1 .24-.14"/><path class="fl-6" d="m11 4.13.19.13.19-.13.11-.07-.13-.06-.19-.13L11 4l-.11.07.11.07"/><path class="fl-5" d="M12.62 4.07a1 1 0 0 1-.24-.14 1.19 1.19 0 0 1-.24-.17l-.24.17a1 1 0 0 1-.25.14 1.16 1.16 0 0 1 .25.15 1.36 1.36 0 0 1 .24.17 1.19 1.19 0 0 1 .24-.17 1.22 1.22 0 0 1 .24-.15"/><path class="fl-6" d="m11.94 4.14.19.13.19-.13.11-.07-.1-.07-.19-.13-.2.13-.11.07.11.07"/><path class="fl-5" d="M11.65 4.07a1.19 1.19 0 0 1-.14.25 1.44 1.44 0 0 1-.17.24 1.92 1.92 0 0 0 .16.25l.16.24.16-.24a2.26 2.26 0 0 0 .18-.26 1.26 1.26 0 0 1-.17-.24 1.31 1.31 0 0 1-.14-.25"/><path class="fl-6" d="m11.71 4.75.14-.19-.13-.19-.07-.11-.07.11-.13.19s.07.11.13.21l.07.09.07-.09"/><path class="fl-5" d="M11.38 4.07a.27.27 0 1 0 .27-.27.27.27 0 0 0-.27.27"/><path class="fl-6" d="M11.8 4.07a.15.15 0 1 1-.3 0 .15.15 0 1 1 .3 0"/><path class="fl-5" d="m15.3 11.46.18-.23a8.7 8.7 0 0 0 .44-.87s.5-1.42.84-1.42c0 0 .15-.07 0-.17a2.42 2.42 0 0 0-.47-.24.33.33 0 0 0 .16-.29.3.3 0 0 0-.05-.24.3.3 0 0 0 .22-.3.32.32 0 0 0-.2-.29.31.31 0 0 0-.12-.59.32.32 0 0 0 .17-.28.31.31 0 0 0-.31-.31.34.34 0 0 0 0-.16.31.31 0 0 0-.31-.31.31.31 0 0 0-.19.07.25.25 0 0 0 0-.08.31.31 0 0 0-.31-.31.31.31 0 0 0-.26.13.31.31 0 0 0-.57-.11.3.3 0 0 0-.28-.19.31.31 0 0 0-.29.2.31.31 0 0 0-.26-.16.31.31 0 0 0-.3.24.31.31 0 0 0-.55.08.31.31 0 0 0-.53.06.27.27 0 0 0-.16-.07.6.6 0 0 0 .1-.32.58.58 0 0 0-1.16 0 .52.52 0 0 0 .09.32.29.29 0 0 0-.18.08.32.32 0 0 0-.28-.18.31.31 0 0 0-.25.12.31.31 0 0 0-.29-.22.32.32 0 0 0-.26.14.31.31 0 0 0-.3-.24.31.31 0 0 0-.27.15.31.31 0 0 0-.57 0 .32.32 0 0 0-.27-.15.31.31 0 0 0-.31.25.31.31 0 0 0-.57.18.37.37 0 0 0 0 .08.31.31 0 0 0-.46.4.31.31 0 0 0-.31.31.29.29 0 0 0 .14.25.31.31 0 0 0-.13.59.32.32 0 0 0-.2.28.3.3 0 0 0 .22.3.3.3 0 0 0-.11.24.33.33 0 0 0 .16.28 2.53 2.53 0 0 0-.46.24c-.1.1 0 .16 0 .16.34 0 .83 1.44.83 1.44a8 8 0 0 0 .43.87s.13.18.18.23z"/><path class="fl-6" d="M7.28 8.21a.19.19 0 0 1-.2.2.2.2 0 0 1-.2-.2.19.19 0 0 1 .21-.21.2.2 0 0 1 .2.2m-.12-.52a.2.2 0 0 1-.4 0 .2.2 0 1 1 .4 0m.01-.57a.19.19 0 0 1-.2.2.2.2 0 1 1 .2-.2m.17-.59a.2.2 0 0 1-.2.2.2.2 0 1 1 .2-.2m.31-.46a.2.2 0 1 1-.2-.2.2.2 0 0 1 .2.2m.49-.32a.19.19 0 0 1-.2.2.19.19 0 0 1-.2-.2.2.2 0 0 1 .2-.2.2.2 0 0 1 .2.2m.56-.12a.2.2 0 0 1-.2.2.19.19 0 0 1-.2-.2.2.2 0 0 1 .4 0m.55-.04a.2.2 0 0 1-.2.2.2.2 0 0 1-.19-.2.2.2 0 0 1 .2-.2.2.2 0 0 1 .2.2m.55.05a.2.2 0 1 1-.4 0 .2.2 0 0 1 .4 0m.56.1a.2.2 0 1 1-.39 0 .2.2 0 0 1 .39 0m.54.1a.2.2 0 1 1-.2-.2.2.2 0 0 1 .2.2m.47.11a.2.2 0 0 1-.2.2.2.2 0 0 1 0-.4.2.2 0 0 1 .2.2m.42 1.8a.18.18 0 0 1-.18.18.18.18 0 0 1-.18-.18.18.18 0 0 1 .18-.18.18.18 0 0 1 .18.18m-.01-.46a.16.16 0 0 1-.16.16.16.16 0 1 1 .16-.16m-.01-.46a.15.15 0 1 1-.3 0 .15.15 0 0 1 .3 0m-.02-.44a.13.13 0 1 1-.26 0 .13.13 0 0 1 .13-.13.14.14 0 0 1 .13.13M11.76 6a.12.12 0 1 1-.11-.12.12.12 0 0 1 .11.12M16 8.24a.2.2 0 0 0 .39 0 .2.2 0 0 0-.2-.2.2.2 0 0 0-.2.2m.11-.54a.2.2 0 1 0 .39 0 .2.2 0 0 0-.2-.2.2.2 0 0 0-.2.2m0-.57a.2.2 0 0 0 .2.2.2.2 0 0 0 0-.4.2.2 0 0 0-.2.2m-.17-.58a.2.2 0 1 0 .2-.2.2.2 0 0 0-.2.2m-.3-.46a.2.2 0 1 0 .2-.2.2.2 0 0 0-.2.2m-.48-.33a.2.2 0 1 0 .2-.2.2.2 0 0 0-.2.2m-.56-.12a.2.2 0 0 0 .19.2.2.2 0 0 0 .2-.2.2.2 0 0 0-.2-.2.19.19 0 0 0-.2.2M14 5.6a.2.2 0 1 0 .2-.2.2.2 0 0 0-.2.2m-.54.04a.2.2 0 1 0 .2-.2.2.2 0 0 0-.2.2m-.55.1a.2.2 0 0 0 .4 0 .2.2 0 0 0-.2-.2.2.2 0 0 0-.2.2m-.54.09a.2.2 0 0 0 .19.2.2.2 0 1 0 0-.4.19.19 0 0 0-.2.19m-.47.12a.19.19 0 0 0 .2.2.2.2 0 0 0 .2-.2.2.2 0 1 0-.39 0M7.51 8.37a.82.82 0 0 1 .36.12 3.86 3.86 0 0 1-.29-1.06A1.1 1.1 0 0 1 8.5 6.2a6.31 6.31 0 0 1 2.5.27v-.22A8.33 8.33 0 0 0 8.43 6a1.3 1.3 0 0 0-1.12 1 2.56 2.56 0 0 0 .2 1.36m3.41-.21A1.28 1.28 0 0 1 11.2 8a14.61 14.61 0 0 0 .17-1.69h-.17a10.79 10.79 0 0 1-.28 1.88m4.84.21a.85.85 0 0 0-.37.12 4 4 0 0 0 .3-1 1.11 1.11 0 0 0-.91-1.24 6.31 6.31 0 0 0-2.52.25v-.22A8.27 8.27 0 0 1 14.85 6 1.3 1.3 0 0 1 16 7a2.57 2.57 0 0 1-.21 1.36m-3.44-.21a1.28 1.28 0 0 0-.28-.15 14.5 14.5 0 0 1-.16-1.69h.17a10.86 10.86 0 0 0 .27 1.88"/><path class="fl-6" d="M11.63 8c1 0 1.11 1.2 1.11 1.2.68-1 1.26-1.09 1.26-1.09 1-.08.8 1.24.8 1.24a1.16 1.16 0 0 1 1.82-.59 4.68 4.68 0 0 0-.85 1.55 5.6 5.6 0 0 1-.49.87h-.07a.33.33 0 0 0-.06-.27.66.66 0 0 1-.05.24h-.12a.36.36 0 0 0-.07-.26.61.61 0 0 1 0 .24h-.12a.34.34 0 0 0-.07-.26.63.63 0 0 1 0 .24h-.12a.35.35 0 0 0-.08-.26.64.64 0 0 1 0 .24h-.12a.35.35 0 0 0-.08-.26.63.63 0 0 1 0 .24L14 11a.33.33 0 0 0-.09-.26.67.67 0 0 1 0 .24h-.13a.34.34 0 0 0-.09-.26.6.6 0 0 1 0 .24h-.12a.36.36 0 0 0-.09-.26.61.61 0 0 1 0 .24h-.18a.34.34 0 0 0-.1-.26.57.57 0 0 1 0 .24h-.12a.35.35 0 0 0-.1-.26.61.61 0 0 1 0 .24h-.12a.34.34 0 0 0-.11-.25.65.65 0 0 1 0 .24h-.13a.35.35 0 0 0-.11-.25.67.67 0 0 1 0 .25h-.12a.35.35 0 0 0-.12-.25.63.63 0 0 1 0 .24h-.13a.34.34 0 0 0-.12-.25.61.61 0 0 1 0 .24h-.13a.35.35 0 0 0-.13-.24.65.65 0 0 1 0 .24h-.2a.62.62 0 0 1 0-.24.33.33 0 0 0-.13.24h-.13a.62.62 0 0 1 0-.24.35.35 0 0 0-.12.25H11a.65.65 0 0 1 0-.25.33.33 0 0 0-.12.25h-.13a.61.61 0 0 1 0-.24.34.34 0 0 0-.11.25h-.13a.61.61 0 0 1 0-.24.35.35 0 0 0-.11.25h-.12a.6.6 0 0 1 0-.24.35.35 0 0 0-.11.25h-.12a.68.68 0 0 1 0-.24.34.34 0 0 0-.1.25h-.13a.63.63 0 0 1 0-.24.36.36 0 0 0-.1.25H9.6a.55.55 0 0 1 0-.24.34.34 0 0 0-.09.26h-.12a.61.61 0 0 1 0-.24.36.36 0 0 0-.09.26l-.2.03a.69.69 0 0 1 0-.24.33.33 0 0 0-.1.24h-.13a.62.62 0 0 1 0-.24.37.37 0 0 0-.08.27h-.12a.66.66 0 0 1 0-.24.35.35 0 0 0-.07.26h-.12a.56.56 0 0 1 0-.24.35.35 0 0 0-.07.26h-.12a.61.61 0 0 1 0-.24.35.35 0 0 0-.29.37 5.69 5.69 0 0 1-.49-.87 4.69 4.69 0 0 0-.84-1.56 1.16 1.16 0 0 1 1.81.6s-.2-1.37.78-1.23c0 0 .58.06 1.25 1.1 0 0 .09-1.2 1.12-1.19m-.4-2.54a.45.45 0 0 0 .82 0 1.59 1.59 0 0 0-.41-.05 1.56 1.56 0 0 0-.41.05m.77-.4a.46.46 0 0 0-.23-.21v.19H12m-.53-.01v-.19a.47.47 0 0 0-.23.21h.23"/><path class="fl-6" d="M11.64 5.35a1.71 1.71 0 0 0-.44.06.32.32 0 0 1 0-.09.42.42 0 0 1 0-.09h.37v-.3h.11a1.19 1.19 0 0 0 0 .19v.11h.37v.09a.6.6 0 0 1 0 .09 1.68 1.68 0 0 0-.44-.06"/><path class="fl-5" d="M7.43 9.71a.62.62 0 0 1 .4.17 2.52 2.52 0 0 0-.19-.54 1.39 1.39 0 0 1 .48.47.94.94 0 0 1 .15-.31 4.89 4.89 0 0 0 0 1.11 4.77 4.77 0 0 0-.87-.91m1.7-.24a.58.58 0 0 1 .34.1 2.58 2.58 0 0 0-.15-.62 1.78 1.78 0 0 1 .4.48 1.54 1.54 0 0 0 .15-.28 8.93 8.93 0 0 0 .16 1.3 4.61 4.61 0 0 0-.87-1m2.02-.37s.23 0 .28.14c.05.14.23-.39.21-.52a1.87 1.87 0 0 1 .16.51 1.27 1.27 0 0 1 .34-.2 4.17 4.17 0 0 0-.56 1.38 2.64 2.64 0 0 0-.43-1.3m3.07.38a.56.56 0 0 0-.35.1 2.5 2.5 0 0 1 .17-.61 1.79 1.79 0 0 0-.42.47 1.31 1.31 0 0 1-.14-.29 9.94 9.94 0 0 1-.19 1.28 4.93 4.93 0 0 1 .92-.94m1.57.35a1 1 0 0 0-.42.11 2.42 2.42 0 0 1 .24-.52 1.36 1.36 0 0 0-.52.43 1 1 0 0 0-.13-.32 6 6 0 0 1-.15 1.19 4.88 4.88 0 0 1 1-.89"/></g></g></g></svg><span>Fürstentum Liechtenstein</span></div>
+                  <div class="sm-sponsors2__div"></div>
+                  <div class="sm-sponsors2__col"><div class="lg lg--myswitzerland" role="img" aria-label="Schweiz Tourismus"></div><span>Schweiz Tourismus</span></div>
+                </div>
+                <div class="sm-sponsors2__rule"></div>
+                <div class="sm-sponsors2__fachpartner">
+                  <h5>Fachpartner</h5>
+                  <div class="sm-sponsors2__fp-row">
+                    <div class="lg lg--fp-wanderwege" role="img" aria-label="Schweizer Wanderwege"></div>
+                    <div class="lg lg--fp-canoe" role="img" aria-label="Swiss Canoe"></div>
+                    <div class="lg lg--fp-langlauf" role="img" aria-label="langlauf.ch"></div>
+                    <div class="lg lg--fp-rsf" role="img" aria-label="Romandie Ski de Fond"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
