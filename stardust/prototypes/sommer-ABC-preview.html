@@ -89,7 +89,7 @@
   .sm-logo{width:150px; height:30px;}
   .sm-header__right{display:flex; align-items:center; gap:16px;}
   .sm-login{display:flex; align-items:center; gap:8px; background:var(--red); color:#fff; font-weight:700; font-size:13px; padding:8px 14px; border-radius:7px;}
-  .sm-icon{width:18px; height:18px; border:1.5px solid var(--ink-3); border-radius:50%;}
+  .sm-icon{width:20px; height:20px; flex:none; color:var(--ink-3); cursor:pointer;}
 
   .sm-cta{display:inline-flex; align-items:center; gap:6px; color:var(--red); font-weight:700; font-size:14.5px;}
   .sm-cta::before{content:"→"; font-weight:700;}
@@ -269,7 +269,7 @@
   [data-variant="c"] .sm-header{position:absolute; top:16px; left:16px; right:16px; z-index:20; background:rgba(30,42,32,.3); backdrop-filter:blur(18px) saturate(1.6); -webkit-backdrop-filter:blur(18px) saturate(1.6); border:1px solid rgba(255,255,255,.4); border-radius:999px; padding:10px 20px; box-shadow:0 10px 30px rgba(0,0,0,.22), inset 0 1px 0 rgba(255,255,255,.35);}
   [data-variant="c"] .sm-logo{width:130px; height:26px;}
   [data-variant="c"] .sm-login{background:rgba(255,255,255,.16); backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,.4);}
-  [data-variant="c"] .sm-icon{border-color:rgba(255,255,255,.5);}
+  [data-variant="c"] .sm-icon{color:rgba(255,255,255,.85);}
   [data-variant="c"] .sm-intake{padding-top:88px;}
   [data-variant="c"] .sm-hero{position:relative; height:860px;}
   [data-variant="c"] .sm-hero__bleed{position:absolute; top:0; bottom:0; left:auto; right:auto; width:100vw; margin-left:calc(50% - 50vw); margin-right:calc(50% - 50vw); overflow:hidden;}
@@ -390,8 +390,8 @@
       <div class="sm-logo lg lg--wordmark" role="img" aria-label="SchweizMobil"></div>
       <div class="sm-header__right">
         <div class="sm-login">★ Plus · Anmelden</div>
-        <div class="sm-icon"></div>
-        <div class="sm-icon"></div>
+        <svg class="sm-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Suche"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+        <svg class="sm-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Einstellungen"><path d="M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z"/></svg>
       </div>
     </header>
 
@@ -520,8 +520,8 @@
       <div class="sm-logo lg lg--wordmark" role="img" aria-label="SchweizMobil"></div>
       <div class="sm-header__right">
         <div class="sm-login">★ Plus · Anmelden</div>
-        <div class="sm-icon"></div>
-        <div class="sm-icon"></div>
+        <svg class="sm-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Suche"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+        <svg class="sm-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Einstellungen"><path d="M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z"/></svg>
       </div>
     </header>
 
@@ -671,8 +671,8 @@
       <div class="sm-logo lg lg--wordmark-onDark" role="img" aria-label="SchweizMobil"></div>
       <div class="sm-header__right">
         <div class="sm-login">★ Plus · Anmelden</div>
-        <div class="sm-icon"></div>
-        <div class="sm-icon"></div>
+        <svg class="sm-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Suche"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+        <svg class="sm-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Einstellungen"><path d="M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z"/></svg>
       </div>
     </header>
 
