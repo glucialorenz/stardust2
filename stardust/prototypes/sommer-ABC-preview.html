@@ -173,6 +173,10 @@
   [data-variant="b"] .sm-temp-card__label{font-size:11px; color:rgba(255,255,255,.6); margin-left:2px;}
   [data-variant="b"] .sm-temp-card__source{font-size:9.5px; color:rgba(255,255,255,.4); margin-top:10px; padding-top:10px; border-top:1px solid rgba(255,255,255,.15); line-height:1.5;}
   @media (max-width:640px){ [data-variant="b"] .sm-temp-card{position:static; margin:16px 24px 0; max-width:none;} [data-variant="b"] .sm-hero{height:auto; padding-bottom:16px;} }
+  [data-variant="b"] .sm-tile{position:relative; overflow:hidden; padding:22px 10px 18px; gap:10px;}
+  [data-variant="b"] .sm-tile__wave{position:absolute; left:0; right:0; bottom:0; width:100%; height:65%; z-index:-1;}
+  [data-variant="b"] .sm-tile__drop{width:40px; height:40px; border-radius:50%; background:radial-gradient(circle at 32% 26%, rgba(255,255,255,.98) 0%, rgba(255,255,255,.7) 45%, rgba(255,255,255,.32) 100%); box-shadow:0 4px 12px rgba(0,0,0,.22), inset 0 1px 2px #fff; display:flex; align-items:center; justify-content:center; overflow:hidden;}
+  [data-variant="b"] .sm-tile__drop img{width:24px; height:24px; border-radius:6px;}
   [data-variant="b"] .sm-water-rows{display:flex; flex-direction:column;}
   [data-variant="b"] .sm-row{display:grid; grid-template-columns:1fr 1fr; min-height:300px;}
   [data-variant="b"] .sm-row:nth-of-type(even){direction:rtl;}
@@ -180,10 +184,12 @@
   [data-variant="b"] .sm-row__text{padding:40px; display:flex; flex-direction:column; justify-content:center; gap:12px; background:var(--card);}
   [data-variant="b"] .sm-row__text h2{font-size:25px;}
   [data-variant="b"] .sm-row__text p{max-width:46ch;}
-  [data-variant="b"] .sm-more-heading{padding:28px 40px 4px; font-size:12px; text-transform:uppercase; letter-spacing:.06em; color:var(--ink-3); font-weight:700;}
-  [data-variant="b"] .sm-promo{display:grid; grid-template-columns:repeat(4,1fr); gap:2px; background:var(--line); margin-top:14px;}
-  [data-variant="b"] .sm-promo__tile{position:relative; height:130px;}
-  [data-variant="b"] .sm-promo__label{position:absolute; left:0; bottom:0; right:0; padding:8px 10px; font-weight:700; font-size:11.5px; color:#fff;}
+  [data-variant="b"] .sm-more-section{background:linear-gradient(180deg,#eef7fc 0%,#e4f2fa 100%); padding:28px 40px 32px;}
+  [data-variant="b"] .sm-more-heading{padding:0 0 14px; font-size:12px; text-transform:uppercase; letter-spacing:.06em; color:var(--ink-3); font-weight:700;}
+  [data-variant="b"] .sm-promo{display:grid; grid-template-columns:repeat(4,1fr); gap:14px; background:transparent; margin-top:0;}
+  [data-variant="b"] .sm-promo__tile{position:relative; height:150px; border-radius:16px; overflow:hidden; box-shadow:0 8px 20px rgba(20,60,90,.12);}
+  [data-variant="b"] .sm-promo__wave{position:absolute; left:0; right:0; bottom:0; width:100%; height:52%;}
+  [data-variant="b"] .sm-promo__label{position:absolute; left:0; bottom:0; right:0; padding:10px 12px; font-weight:700; font-size:11.5px; color:#fff; text-shadow:0 1px 4px rgba(0,20,40,.35);}
   [data-variant="b"] .sm-utility-heading{padding:32px 40px 4px; font-size:12px; text-transform:uppercase; letter-spacing:.06em; color:var(--ink-3); font-weight:700;}
   [data-variant="b"] .sm-utility{display:grid; grid-template-columns:repeat(3,1fr); gap:2px; background:var(--line); margin-top:10px;}
   [data-variant="b"] .sm-utility__card{background:var(--card); display:flex; flex-direction:column;}
@@ -534,12 +540,12 @@
     </div>
 
     <div class="sm-tiles">
-      <div class="sm-tile" style="background:var(--hike)"><img class="sm-tile__icon lg lg--icon-hike" alt="">Wanderland</div>
-      <div class="sm-tile" style="background:var(--cycle)"><img class="sm-tile__icon lg lg--icon-cycle" alt="">Veloland</div>
-      <div class="sm-tile" style="background:var(--mtb)"><img class="sm-tile__icon lg lg--icon-mountainbike" alt="">Mountainbikeland</div>
-      <div class="sm-tile" style="background:var(--skate)"><img class="sm-tile__icon lg lg--icon-skate" alt="">Skatingland</div>
-      <div class="sm-tile" style="background:var(--canoe)"><img class="sm-tile__icon lg lg--icon-canoe" alt="">Kanuland</div>
-      <div class="sm-tile" style="background:var(--winter)"><img class="sm-tile__icon lg lg--icon-winter" alt="">Winter</div>
+      <div class="sm-tile" style="background:var(--hike)"><svg class="sm-tile__wave sm-tile__wave--a" viewBox="0 0 200 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0,52 C35,68 65,38 100,50 C135,62 165,36 200,48 L200,80 L0,80 Z" fill="rgba(0,0,0,.1)"/></svg><svg class="sm-tile__wave sm-tile__wave--b" viewBox="0 0 200 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0,60 C35,44 65,72 100,58 C135,44 165,70 200,56 L200,80 L0,80 Z" fill="rgba(255,255,255,.16)"/></svg><span class="sm-tile__drop"><img class="sm-tile__icon lg lg--icon-hike" alt=""></span>Wanderland</div>
+      <div class="sm-tile" style="background:var(--cycle)"><svg class="sm-tile__wave sm-tile__wave--a" viewBox="0 0 200 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0,52 C35,68 65,38 100,50 C135,62 165,36 200,48 L200,80 L0,80 Z" fill="rgba(0,0,0,.1)"/></svg><svg class="sm-tile__wave sm-tile__wave--b" viewBox="0 0 200 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0,60 C35,44 65,72 100,58 C135,44 165,70 200,56 L200,80 L0,80 Z" fill="rgba(255,255,255,.16)"/></svg><span class="sm-tile__drop"><img class="sm-tile__icon lg lg--icon-cycle" alt=""></span>Veloland</div>
+      <div class="sm-tile" style="background:var(--mtb)"><svg class="sm-tile__wave sm-tile__wave--a" viewBox="0 0 200 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0,52 C35,68 65,38 100,50 C135,62 165,36 200,48 L200,80 L0,80 Z" fill="rgba(0,0,0,.1)"/></svg><svg class="sm-tile__wave sm-tile__wave--b" viewBox="0 0 200 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0,60 C35,44 65,72 100,58 C135,44 165,70 200,56 L200,80 L0,80 Z" fill="rgba(255,255,255,.16)"/></svg><span class="sm-tile__drop"><img class="sm-tile__icon lg lg--icon-mountainbike" alt=""></span>Mountainbikeland</div>
+      <div class="sm-tile" style="background:var(--skate)"><svg class="sm-tile__wave sm-tile__wave--a" viewBox="0 0 200 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0,52 C35,68 65,38 100,50 C135,62 165,36 200,48 L200,80 L0,80 Z" fill="rgba(0,0,0,.1)"/></svg><svg class="sm-tile__wave sm-tile__wave--b" viewBox="0 0 200 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0,60 C35,44 65,72 100,58 C135,44 165,70 200,56 L200,80 L0,80 Z" fill="rgba(255,255,255,.16)"/></svg><span class="sm-tile__drop"><img class="sm-tile__icon lg lg--icon-skate" alt=""></span>Skatingland</div>
+      <div class="sm-tile" style="background:var(--canoe)"><svg class="sm-tile__wave sm-tile__wave--a" viewBox="0 0 200 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0,52 C35,68 65,38 100,50 C135,62 165,36 200,48 L200,80 L0,80 Z" fill="rgba(0,0,0,.1)"/></svg><svg class="sm-tile__wave sm-tile__wave--b" viewBox="0 0 200 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0,60 C35,44 65,72 100,58 C135,44 165,70 200,56 L200,80 L0,80 Z" fill="rgba(255,255,255,.16)"/></svg><span class="sm-tile__drop"><img class="sm-tile__icon lg lg--icon-canoe" alt=""></span>Kanuland</div>
+      <div class="sm-tile" style="background:var(--winter)"><svg class="sm-tile__wave sm-tile__wave--a" viewBox="0 0 200 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0,52 C35,68 65,38 100,50 C135,62 165,36 200,48 L200,80 L0,80 Z" fill="rgba(0,0,0,.1)"/></svg><svg class="sm-tile__wave sm-tile__wave--b" viewBox="0 0 200 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0,60 C35,44 65,72 100,58 C135,44 165,70 200,56 L200,80 L0,80 Z" fill="rgba(255,255,255,.16)"/></svg><span class="sm-tile__drop"><img class="sm-tile__icon lg lg--icon-winter" alt=""></span>Winter</div>
     </div>
 
     <div class="sm-water-rows">
@@ -561,12 +567,14 @@
       </div>
     </div>
 
-    <div class="sm-more-heading">Mehr Wege, mehr Sommer</div>
-    <div class="sm-promo">
-      <div class="sm-promo__tile ph ph--familienwanderungen"><div class="sm-promo__label" style="background:linear-gradient(0deg,rgba(96,158,38,.9),transparent)">Familienwanderungen</div></div>
-      <div class="sm-promo__tile ph ph--gravelbike"><div class="sm-promo__label" style="background:linear-gradient(0deg,rgba(92,148,207,.9),transparent)">Gravelbike-Touren</div></div>
-      <div class="sm-promo__tile ph ph--genial-legal"><div class="sm-promo__label" style="background:linear-gradient(0deg,rgba(222,171,24,.9),transparent)">Genial legal</div></div>
-      <div class="sm-promo__tile ph ph--hindernisfrei"><div class="sm-promo__label" style="background:linear-gradient(0deg,rgba(96,158,38,.9),transparent)">Hindernisfreie Wege</div></div>
+    <div class="sm-more-section">
+      <div class="sm-more-heading">Mehr Wege, mehr Sommer</div>
+      <div class="sm-promo">
+        <div class="sm-promo__tile ph ph--familienwanderungen"><svg class="sm-promo__wave" viewBox="0 0 200 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0,22 C30,5 60,35 100,20 C140,5 170,32 200,18 L200,60 L0,60 Z" fill="rgba(20,110,190,.6)"/><path d="M0,30 C30,42 60,16 100,28 C140,40 170,14 200,26 L200,60 L0,60 Z" fill="rgba(20,110,190,.4)"/></svg><div class="sm-promo__label">Familienwanderungen</div></div>
+        <div class="sm-promo__tile ph ph--gravelbike"><svg class="sm-promo__wave" viewBox="0 0 200 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0,22 C30,5 60,35 100,20 C140,5 170,32 200,18 L200,60 L0,60 Z" fill="rgba(20,110,190,.6)"/><path d="M0,30 C30,42 60,16 100,28 C140,40 170,14 200,26 L200,60 L0,60 Z" fill="rgba(20,110,190,.4)"/></svg><div class="sm-promo__label">Gravelbike-Touren</div></div>
+        <div class="sm-promo__tile ph ph--genial-legal"><svg class="sm-promo__wave" viewBox="0 0 200 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0,22 C30,5 60,35 100,20 C140,5 170,32 200,18 L200,60 L0,60 Z" fill="rgba(20,110,190,.6)"/><path d="M0,30 C30,42 60,16 100,28 C140,40 170,14 200,26 L200,60 L0,60 Z" fill="rgba(20,110,190,.4)"/></svg><div class="sm-promo__label">Genial legal</div></div>
+        <div class="sm-promo__tile ph ph--hindernisfrei"><svg class="sm-promo__wave" viewBox="0 0 200 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0,22 C30,5 60,35 100,20 C140,5 170,32 200,18 L200,60 L0,60 Z" fill="rgba(20,110,190,.6)"/><path d="M0,30 C30,42 60,16 100,28 C140,40 170,14 200,26 L200,60 L0,60 Z" fill="rgba(20,110,190,.4)"/></svg><div class="sm-promo__label">Hindernisfreie Wege</div></div>
+      </div>
     </div>
 
     <div class="sm-utility-heading">Ausserdem von SchweizMobil</div>
