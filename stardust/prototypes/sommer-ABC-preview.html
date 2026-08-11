@@ -173,7 +173,8 @@
   [data-variant="b"] .sm-temp-card__label{font-size:11px; color:rgba(255,255,255,.6); margin-left:2px;}
   [data-variant="b"] .sm-temp-card__source{font-size:9.5px; color:rgba(255,255,255,.4); margin-top:10px; padding-top:10px; border-top:1px solid rgba(255,255,255,.15); line-height:1.5;}
   @media (max-width:640px){ [data-variant="b"] .sm-temp-card{position:static; margin:16px 24px 0; max-width:none;} [data-variant="b"] .sm-hero{height:auto; padding-bottom:16px;} }
-  [data-variant="b"] .sm-tile{position:relative; overflow:hidden; padding:22px 10px 18px; gap:10px;}
+  [data-variant="b"] .sm-tiles{gap:14px; background:transparent; padding:18px 40px 22px;}
+  [data-variant="b"] .sm-tile{position:relative; overflow:hidden; padding:12px 10px 20px; gap:10px; clip-path:url(#sm-wave-clip); border-radius:0 0 18px 18px; min-height:150px; justify-content:flex-end;}
   [data-variant="b"] .sm-tile__wave{position:absolute; left:0; right:0; bottom:0; width:100%; height:65%; z-index:-1;}
   [data-variant="b"] .sm-tile__drop{width:40px; height:40px; border-radius:50%; background:radial-gradient(circle at 32% 26%, rgba(255,255,255,.98) 0%, rgba(255,255,255,.7) 45%, rgba(255,255,255,.32) 100%); box-shadow:0 4px 12px rgba(0,0,0,.22), inset 0 1px 2px #fff; display:flex; align-items:center; justify-content:center; overflow:hidden;}
   [data-variant="b"] .sm-tile__drop img{width:24px; height:24px; border-radius:6px;}
@@ -359,6 +360,14 @@
     [data-variant="c"] .sm-hero__img{transform:none !important;}
   }
 </style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <clipPath id="sm-wave-clip" clipPathUnits="objectBoundingBox">
+      <path d="M0,0.14 C0.25,0.32 0.4,0.02 0.65,0.12 C0.8,0.18 0.92,0.04 1,0.08 L1,1 L0,1 Z"/>
+    </clipPath>
+  </defs>
+</svg>
 
 <div class="chrome">
   <div class="chrome__row">
